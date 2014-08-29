@@ -1,0 +1,658 @@
+2014-08-22T10:25:25.522102 tid5472 [IFO,LogManager] Enabled primary log file C:\Users\nicuser\Documents\MATLAB\CoreLogs\CoreLog20140822T102525_pid5888.txt
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] User: nicuser
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] Host: NIC-HighSpeed
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] MM Studio version: 1.4.18
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] MMCore version 5.0.3
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] Device API version 60, Module API version 10
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] Operating System: Windows 7 (amd64) 6.1
+2014-08-22T10:25:25.522102 tid5472 [IFO,App] JVM: Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_11, 64-bit
+2014-08-22T10:25:25.522102 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins
+2014-08-22T10:25:25.522102 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Big.jar!/
+2014-08-22T10:25:25.537703 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\DataBrowser.jar!/
+2014-08-22T10:25:26.239712 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Recall.jar!/
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Installing plugin org.micromanager.browser.Data_Browser...
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Error: Plugin [org.micromanager.browser.Data_Browser] has no menuName field
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] org.micromanager.browser.Data_Browser fails to implement static String tooltipDescription.
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Installing plugin org.micromanager.recall.RecallPlugin...
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins/Acquisition_Tools
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\AcquireMultipleRegions.jar!/
+2014-08-22T10:25:26.255312 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\Gaussian.jar!/
+2014-08-22T10:25:26.333313 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\HCS.jar!/
+2014-08-22T10:25:26.348913 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\IntelligentAcquisition.jar!/
+2014-08-22T10:25:26.364513 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\MMTracker.jar!/
+2014-08-22T10:25:26.364513 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Acquisition_Tools\SlideExplorer.jar!/
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin org.micromanager.acquiremultipleregions.AcquireMultipleRegions...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin GaussianTrack_...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin org.micromanager.hcs.SiteGenerator...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin org.micromanager.intelligentacquisition.IntelligentAcquisition...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin com.imaging100x.tracker.TrackerControl...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Installing plugin org.micromanager.slideexplorer.SlideExplorerPlugin...
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins/Beta
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Beta\PixelCalibrator.jar!/
+2014-08-22T10:25:26.395714 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Beta\SlideExplorer2.jar!/
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Installing plugin org.micromanager.pixelcalibrator.PixelCalibratorPlugin...
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Installing plugin org.micromanager.SlideExplorer2...
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Error: Plugin [org.micromanager.SlideExplorer2] has no menuName field
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] org.micromanager.SlideExplorer2 fails to implement static String tooltipDescription.
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins/Developer_Tools
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Developer_Tools\ClojureEditor.jar!/
+2014-08-22T10:25:29.718556 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Developer_Tools\DLLAutoReloader.jar!/
+2014-08-22T10:25:29.765357 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Developer_Tools\SequenceBufferMonitor.jar!/
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Installing plugin org.micromanager.clojureeditor.ClojureEditorPlugin...
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Installing plugin org.micromanager.DLLAutoReloader...
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Error: Plugin [org.micromanager.DLLAutoReloader] has no menuName field
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] org.micromanager.DLLAutoReloader fails to implement static String tooltipDescription.
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Installing plugin org.micromanager.plugins.sequencebuffermonitor.SequenceBufferMonitor...
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins/Device_Control
+2014-08-22T10:25:29.780957 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\ASIdiSPIM.jar!/
+2014-08-22T10:25:29.827758 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\AutoLase.jar!/
+2014-08-22T10:25:29.843358 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\CRISP.jar!/
+2014-08-22T10:25:29.843358 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\MultiCamera.jar!/
+2014-08-22T10:25:29.843358 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\pgFocus.jar!/
+2014-08-22T10:25:29.874558 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\Projector.jar!/
+2014-08-22T10:25:29.890158 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Device_Control\StageControl.jar!/
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin org.micromanager.asidispim.ASIdiSPIM...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin ch.epfl.leb.autolase.AutoLasePlugin...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin org.micromanager.CRISP.CRISP...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin org.micromanager.multicamera.MultiCamera...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin edu.umassmed.pgfocus.pgFocus...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin org.micromanager.projector.ProjectorPlugin...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Installing plugin org.micromanager.stagecontrol.StageControl...
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmplugins/Image_Processing
+2014-08-22T10:25:29.905759 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Image_Processing\ImageFlipper.jar!/
+2014-08-22T10:25:29.921359 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Image_Processing\MultiChannelShading.jar!/
+2014-08-22T10:25:29.921359 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmplugins\Image_Processing\SplitView.jar!/
+2014-08-22T10:25:29.936959 tid4168 [IFO,App] Installing plugin org.micromanager.newimageflipper.NewTaggedImageFlipper...
+2014-08-22T10:25:29.936959 tid4168 [IFO,App] Installing plugin org.micromanager.multichannelshading.MultiChannelShading...
+2014-08-22T10:25:29.936959 tid4168 [IFO,App] Installing plugin org.micromanager.splitview.SplitView...
+2014-08-22T10:25:29.952559 tid4168 [IFO,App] Added URL to system class loader: file:/C:/Users/nicuser/Documents/MATLAB/mmautofocus
+2014-08-22T10:25:29.952559 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmautofocus\MMAutofocus.jar!/
+2014-08-22T10:25:29.952559 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmautofocus\MMAutofocusDuo.jar!/
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmautofocus\MMAutofocusTB.jar!/
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Added URL to system class loader: jar:file:C:\Users\nicuser\Documents\MATLAB\mmautofocus\MMOughtaFocus.jar!/
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Installing autofocus plugin Autofocus...
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Installing autofocus plugin AutofocusDuo...
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Installing autofocus plugin AutofocusTB...
+2014-08-22T10:25:29.968159 tid4168 [IFO,App] Installing autofocus plugin OughtaFocus...
+2014-08-22T10:25:30.077361 tid5472 [IFO,App] Waiting for plugins to finish loading...
+2014-08-22T10:25:30.077361 tid5472 [IFO,App] Finished waiting for plugins to load
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did unload all devices
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device COM3 from SerialManager; label = COM3
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device COM7 from SerialManager; label = COM7
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device COM8 from SerialManager; label = COM8
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device COM1 from SerialManager; label = COM1
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device COM5 from SerialManager; label = COM5
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device Arduino-Hub from Arduino; label = Arduino-Hub
+2014-08-22T10:25:30.077361 tid5472 [IFO,Core] Did load device Arduino-Input from Arduino; label = TubeLens
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device Andor sCMOS Camera from AndorSDK3; label = Zyla
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIScope from NikonTI; label = TIScope
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TINosePiece from NikonTI; label = TINosePiece
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIFilterBlock1 from NikonTI; label = TIFilterBlock1
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIFilterBlock2 from NikonTI; label = TIFilterBlock2
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIZDrive from NikonTI; label = TIZDrive
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIPFSOffset from NikonTI; label = TIPFSOffset
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TIPFSStatus from NikonTI; label = TIPFSStatus
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device TILightPath from NikonTI; label = TILightPath
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device XYStage from ASIStage; label = XYStage
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device ZStage from ASIStage; label = ZStage
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device Spectra from LumencorSpectra; label = Spectra
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device Wheel-A from SutterLambda; label = Wheel-A
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device ESioController from ESIOImagingControllers; label = ESioController
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device Switch from ESIOImagingControllers; label = ESIOSwitch
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device Shutter from ESIOImagingControllers; label = ESIOShutter
+2014-08-22T10:25:31.808983 tid5472 [IFO,Core] Did load device ScopeLED-B from ScopeLED; label = ScopeLED
+2014-08-22T10:25:47.253181 tid5472 [IFO,Core] Did load device RappScanner from Rapp; label = RappScanner
+2014-08-22T10:25:47.253181 tid5472 [ERR,Core:dev:RappScanner] Cannot set property "VirtualComPort" to "COM10" [ Error in device "RappScanner": Invalid property value: VirtualComPort (3) ]
+2014-08-22T10:25:47.253181 tid5472 [IFO,Core] Will initialize 25 devices
+2014-08-22T10:25:47.253181 tid5472 [IFO,Core] Will initialize device COM3
+2014-08-22T10:25:47.346782 tid5472 [IFO,Core] Did initialize device COM3
+2014-08-22T10:25:47.346782 tid5472 [IFO,Core] Will initialize device COM7
+2014-08-22T10:25:47.362382 tid5472 [IFO,Core] Did initialize device COM7
+2014-08-22T10:25:47.362382 tid5472 [IFO,Core] Will initialize device COM8
+2014-08-22T10:25:47.455984 tid5472 [IFO,Core] Did initialize device COM8
+2014-08-22T10:25:47.455984 tid5472 [IFO,Core] Will initialize device COM1
+2014-08-22T10:25:47.455984 tid5472 [IFO,Core] Did initialize device COM1
+2014-08-22T10:25:47.455984 tid5472 [IFO,Core] Will initialize device COM5
+2014-08-22T10:25:47.643186 tid5472 [IFO,Core] Did initialize device COM5
+2014-08-22T10:25:47.643186 tid5472 [IFO,Core] Will initialize device Arduino-Hub
+2014-08-22T10:25:49.733613 tid5472 [IFO,Core] Did initialize device Arduino-Hub
+2014-08-22T10:25:49.733613 tid5472 [IFO,Core] Will initialize device TubeLens
+2014-08-22T10:25:49.780413 tid5472 [IFO,Core] Did initialize device TubeLens
+2014-08-22T10:25:49.780413 tid5472 [IFO,Core] Will initialize device Zyla
+2014-08-22T10:25:55.880092 tid5472 [IFO,Core] Did initialize device Zyla
+2014-08-22T10:25:55.880092 tid5472 [IFO,Core] Default camera set to Zyla
+2014-08-22T10:25:55.880092 tid5472 [IFO,Core] Will initialize device TIScope
+2014-08-22T10:25:55.880092 tid5472 [IFO,dev:TIScope] Driver version: micusb.sys 2.0.5.1
+2014-08-22T10:25:55.880092 tid5472 [IFO,dev:TIScope] Software version: 4.4.1.714
+2014-08-22T10:26:00.045345 tid5472 [IFO,dev:TIScope] Firmware version: Ti-E V5.00
+2014-08-22T10:26:00.045345 tid5472 [IFO,Core] Did initialize device TIScope
+2014-08-22T10:26:00.045345 tid5472 [IFO,Core] Will initialize device TINosePiece
+2014-08-22T10:26:00.341749 tid5472 [IFO,Core] Did initialize device TINosePiece
+2014-08-22T10:26:00.341749 tid5472 [IFO,Core] Will initialize device TIFilterBlock1
+2014-08-22T10:26:00.466550 tid5472 [IFO,Core] Did initialize device TIFilterBlock1
+2014-08-22T10:26:00.466550 tid5472 [IFO,Core] Will initialize device TIFilterBlock2
+2014-08-22T10:26:00.591352 tid5472 [IFO,Core] Did initialize device TIFilterBlock2
+2014-08-22T10:26:00.591352 tid5472 [IFO,Core] Will initialize device TIZDrive
+2014-08-22T10:26:00.653753 tid5472 [IFO,Core] Did initialize device TIZDrive
+2014-08-22T10:26:00.653753 tid5472 [IFO,Core] Will initialize device TIPFSOffset
+2014-08-22T10:26:00.840955 tid5472 [IFO,Core] Did initialize device TIPFSOffset
+2014-08-22T10:26:00.840955 tid5472 [IFO,Core] Will initialize device TIPFSStatus
+2014-08-22T10:26:00.903356 tid5472 [IFO,Core] Did initialize device TIPFSStatus
+2014-08-22T10:26:00.903356 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:26:00.903356 tid5472 [IFO,Core] Will initialize device TILightPath
+2014-08-22T10:26:01.090558 tid5472 [IFO,Core] Did initialize device TILightPath
+2014-08-22T10:26:01.090558 tid5472 [IFO,Core] Will initialize device XYStage
+2014-08-22T10:26:01.589765 tid5472 [IFO,Core] Did initialize device XYStage
+2014-08-22T10:26:01.589765 tid5472 [IFO,Core] Default xy stage set to XYStage
+2014-08-22T10:26:01.589765 tid5472 [IFO,Core] Will initialize device ZStage
+2014-08-22T10:26:01.714566 tid5472 [IFO,dev:ZStage]  ADEPT_XYPZ_SEQ
+                                   [              ] Motor Axes: X Y Z 
+                                   [              ] Axis Types: x x p 
+                                   [              ] CMDS: XYZFTR
+                                   [              ] BootLdr V:1
+                                   [              ] Hdwr REV.F
+                                   [              ] LL COMMANDS
+                                   [              ] RING BUFFER 250
+                                   [              ] SEARCH INDEX
+                                   [              ] ARRAY MODULE
+                                   [              ] IN0_INT
+                                   [              ] ADEPT
+                                   [              ] SEQUENCER
+                                   [              ] LED DIMMER
+                                   [              ] PLANAR CORRECTION
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Did initialize device ZStage
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Will initialize device Spectra
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Did initialize device Spectra
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Default shutter set to Spectra
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Will initialize device Wheel-A
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Did initialize device Wheel-A
+2014-08-22T10:26:01.745767 tid5472 [IFO,Core] Will initialize device ESioController
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Did initialize device ESioController
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Will initialize device ESIOSwitch
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Did initialize device ESIOSwitch
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Will initialize device ESIOShutter
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Did initialize device ESIOShutter
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-22T10:26:03.336987 tid5472 [IFO,Core] Will initialize device ScopeLED
+2014-08-22T10:26:03.524190 tid5472 [IFO,Core] Did initialize device ScopeLED
+2014-08-22T10:26:03.524190 tid5472 [IFO,Core] Default shutter set to ScopeLED
+2014-08-22T10:26:03.524190 tid5472 [IFO,Core] Will initialize device RappScanner
+2014-08-22T10:26:03.524190 tid5472 [ERR,Core] Error occurred in device RappScanner: Error in device "RappScanner": Unable to communicate with the device. (35)
+2014-08-22T10:26:03.555390 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Line 79: Property,RappScanner,VirtualComPort,COM10
+                                   [       ] Cannot set property "VirtualComPort" to "COM10"
+                                   [       ] 
+                                   [       ] Line 99: Property,Core,Initialize,1
+                                   [       ] Error in device "RappScanner": Unable to communicate with the device. (35)
+                                   [       ] 
+                                   [       ] Line 104: Property,Core,Camera,Zyla
+                                   [       ] Cannot set Core property Camera to invalid value "Zyla"
+                                   [       ] 
+                                   [       ] Line 105: Property,Core,Shutter,ESIOShutter
+                                   [       ] Cannot set Core property Shutter to invalid value "ESIOShutter"
+                                   [       ] 
+                                   [       ] Line 106: Property,Core,Focus,ZStage
+                                   [       ] Cannot set Core property Focus to invalid value "ZStage"
+                                   [       ] 
+                                   [       ]  in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_loadSystemConfiguration(Native Method)
+                                   [       ]   at mmcorej.CMMCore.loadSystemConfiguration(CMMCore.java:301)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.loadSystemConfiguration(MMStudioMainFrame.java:2863)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:589)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:26:10.045073 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:26:10.045073 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Cannot set Core property Camera to invalid value "Zyla" in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_setAutoFocusDevice(Native Method)
+                                   [       ]   at mmcorej.CMMCore.setAutoFocusDevice(CMMCore.java:617)
+                                   [       ]   at org.micromanager.utils.AutofocusManager.refresh(AutofocusManager.java:105)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.updateGUI(MMStudioMainFrame.java:2537)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.updateGUI(MMStudioMainFrame.java:2526)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializeGUI(MMStudioMainFrame.java:2414)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.loadSystemConfiguration(MMStudioMainFrame.java:2877)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:589)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:26:10.715882 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:26:10.778283 tid5472 [IFO,App] Startup script file (C:\Users\nicuser\Documents\MATLAB\MMStartup.bsh) not present.
+2014-08-22T10:26:10.825083 tid5472 [IFO,Core] Channel group set to Channel
+2014-08-22T10:26:10.825083 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Cannot set Core property Camera to invalid value "Zyla" in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_setChannelGroup(Native Method)
+                                   [       ]   at mmcorej.CMMCore.setChannelGroup(CMMCore.java:633)
+                                   [       ]   at org.micromanager.acquisition.AcquisitionWrapperEngine.setChannelGroup(AcquisitionWrapperEngine.java:689)
+                                   [       ]   at org.micromanager.AcqControlDlg.loadAcqSettings(AcqControlDlg.java:1803)
+                                   [       ]   at org.micromanager.AcqControlDlg.<init>(AcqControlDlg.java:1612)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:598)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:26:10.840683 tid5472 [IFO,App] Error: "Cy3-BF" is not found in the current Channel group.
+2014-08-22T10:26:10.903084 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Cannot set Core property Camera to invalid value "Zyla" in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_setChannelGroup(Native Method)
+                                   [       ]   at mmcorej.CMMCore.setChannelGroup(CMMCore.java:633)
+                                   [       ]   at org.micromanager.acquisition.AcquisitionWrapperEngine.setChannelGroup(AcquisitionWrapperEngine.java:689)
+                                   [       ]   at org.micromanager.AcqControlDlg$17.actionPerformed(AcqControlDlg.java:1238)
+                                   [       ]   at javax.swing.JComboBox.fireActionEvent(Unknown Source)
+                                   [       ]   at javax.swing.JComboBox.setSelectedItem(Unknown Source)
+                                   [       ]   at org.micromanager.AcqControlDlg.updateGUIContents(AcqControlDlg.java:2268)
+                                   [       ]   at org.micromanager.AcqControlDlg.<init>(AcqControlDlg.java:1618)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:598)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:26:10.918684 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Cannot set Core property Camera to invalid value "Zyla" in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_setChannelGroup(Native Method)
+                                   [       ]   at mmcorej.CMMCore.setChannelGroup(CMMCore.java:633)
+                                   [       ]   at org.micromanager.acquisition.AcquisitionWrapperEngine.setChannelGroup(AcquisitionWrapperEngine.java:689)
+                                   [       ]   at org.micromanager.AcqControlDlg$17.actionPerformed(AcqControlDlg.java:1238)
+                                   [       ]   at javax.swing.JComboBox.fireActionEvent(Unknown Source)
+                                   [       ]   at javax.swing.JComboBox.setSelectedItem(Unknown Source)
+                                   [       ]   at org.micromanager.AcqControlDlg.updateGUIContents(AcqControlDlg.java:2268)
+                                   [       ]   at org.micromanager.AcqControlDlg.applySettings(AcqControlDlg.java:2427)
+                                   [       ]   at org.micromanager.AcqControlDlg.<init>(AcqControlDlg.java:1621)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:598)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:26:10.918684 tid5472 [ERR,Core:dev:RappScanner] Cannot get value of property "Laser" [ Error in device "RappScanner": Invalid property name encountered: Laser (2) ]
+2014-08-22T10:26:10.918684 tid5472 [IFO,App] 
+                                   [       ] java.lang.Exception: Cannot get value of property "Laser" [ Error in device "RappScanner": Invalid property name encountered: Laser (2) ] in Thread[AWT-EventQueue-0,6,main]
+                                   [       ]   at mmcorej.MMCoreJJNI.CMMCore_getCurrentConfig(Native Method)
+                                   [       ]   at mmcorej.CMMCore.getCurrentConfig(CMMCore.java:709)
+                                   [       ]   at org.micromanager.ConfigGroupPad$StateTableData.updateStatus(ConfigGroupPad.java:271)
+                                   [       ]   at org.micromanager.ConfigGroupPad$StateTableData.<init>(ConfigGroupPad.java:168)
+                                   [       ]   at org.micromanager.ConfigGroupPad.setCore(ConfigGroupPad.java:79)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.initializationSequence(MMStudioMainFrame.java:602)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.access$100(MMStudioMainFrame.java:176)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$1.windowOpened(MMStudioMainFrame.java:477)
+                                   [       ]   at java.awt.AWTEventMulticaster.windowOpened(Unknown Source)
+                                   [       ]   at java.awt.Window.processWindowEvent(Unknown Source)
+                                   [       ]   at javax.swing.JFrame.processWindowEvent(Unknown Source)
+                                   [       ]   at java.awt.Window.processEvent(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Container.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Window.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.Component.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.access$200(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$3.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.awt.EventQueue$4.run(Unknown Source)
+                                   [       ]   at java.security.AccessController.doPrivileged(Native Method)
+                                   [       ]   at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+                                   [       ]   at java.awt.EventQueue.dispatchEvent(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+                                   [       ]   at java.awt.EventDispatchThread.run(Unknown Source)
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did unload all devices
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device COM3 from SerialManager; label = COM3
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device COM7 from SerialManager; label = COM7
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device COM8 from SerialManager; label = COM8
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device COM1 from SerialManager; label = COM1
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device COM5 from SerialManager; label = COM5
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device Arduino-Hub from Arduino; label = Arduino-Hub
+2014-08-22T10:30:34.811668 tid5472 [IFO,Core] Did load device Arduino-Input from Arduino; label = TubeLens
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device Andor sCMOS Camera from AndorSDK3; label = Zyla
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIScope from NikonTI; label = TIScope
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TINosePiece from NikonTI; label = TINosePiece
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIFilterBlock1 from NikonTI; label = TIFilterBlock1
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIFilterBlock2 from NikonTI; label = TIFilterBlock2
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIZDrive from NikonTI; label = TIZDrive
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIPFSOffset from NikonTI; label = TIPFSOffset
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TIPFSStatus from NikonTI; label = TIPFSStatus
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device TILightPath from NikonTI; label = TILightPath
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device XYStage from ASIStage; label = XYStage
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device ZStage from ASIStage; label = ZStage
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device Spectra from LumencorSpectra; label = Spectra
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device Wheel-A from SutterLambda; label = Wheel-A
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device ESioController from ESIOImagingControllers; label = ESioController
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device Switch from ESIOImagingControllers; label = ESIOSwitch
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device Shutter from ESIOImagingControllers; label = ESIOShutter
+2014-08-22T10:30:36.543290 tid5472 [IFO,Core] Did load device ScopeLED-B from ScopeLED; label = ScopeLED
+2014-08-22T10:30:42.237363 tid5472 [IFO,Core] Did load device RappScanner from Rapp; label = RappScanner
+2014-08-22T10:30:42.237363 tid5472 [IFO,Core] Will initialize 25 devices
+2014-08-22T10:30:42.237363 tid5472 [IFO,Core] Will initialize device COM3
+2014-08-22T10:30:42.330964 tid5472 [IFO,Core] Did initialize device COM3
+2014-08-22T10:30:42.330964 tid5472 [IFO,Core] Will initialize device COM7
+2014-08-22T10:30:42.330964 tid5472 [IFO,Core] Did initialize device COM7
+2014-08-22T10:30:42.330964 tid5472 [IFO,Core] Will initialize device COM8
+2014-08-22T10:30:42.440165 tid5472 [IFO,Core] Did initialize device COM8
+2014-08-22T10:30:42.440165 tid5472 [IFO,Core] Will initialize device COM1
+2014-08-22T10:30:42.440165 tid5472 [IFO,Core] Did initialize device COM1
+2014-08-22T10:30:42.440165 tid5472 [IFO,Core] Will initialize device COM5
+2014-08-22T10:30:42.627368 tid5472 [IFO,Core] Did initialize device COM5
+2014-08-22T10:30:42.627368 tid5472 [IFO,Core] Will initialize device Arduino-Hub
+2014-08-22T10:30:44.717795 tid5472 [IFO,Core] Did initialize device Arduino-Hub
+2014-08-22T10:30:44.717795 tid5472 [IFO,Core] Will initialize device TubeLens
+2014-08-22T10:30:44.764595 tid5472 [IFO,Core] Did initialize device TubeLens
+2014-08-22T10:30:44.764595 tid5472 [IFO,Core] Will initialize device Zyla
+2014-08-22T10:30:48.867448 tid5472 [IFO,Core] Did initialize device Zyla
+2014-08-22T10:30:48.867448 tid5472 [IFO,Core] Default camera set to Zyla
+2014-08-22T10:30:48.867448 tid5472 [IFO,Core] Will initialize device TIScope
+2014-08-22T10:30:48.867448 tid5472 [IFO,dev:TIScope] Driver version: micusb.sys 2.0.5.1
+2014-08-22T10:30:48.867448 tid5472 [IFO,dev:TIScope] Software version: 4.4.1.714
+2014-08-22T10:30:52.985901 tid5472 [IFO,dev:TIScope] Firmware version: Ti-E V5.00
+2014-08-22T10:30:52.985901 tid5472 [IFO,Core] Did initialize device TIScope
+2014-08-22T10:30:52.985901 tid5472 [IFO,Core] Will initialize device TINosePiece
+2014-08-22T10:30:53.219904 tid5472 [IFO,Core] Did initialize device TINosePiece
+2014-08-22T10:30:53.219904 tid5472 [IFO,Core] Will initialize device TIFilterBlock1
+2014-08-22T10:30:53.344705 tid5472 [IFO,Core] Did initialize device TIFilterBlock1
+2014-08-22T10:30:53.344705 tid5472 [IFO,Core] Will initialize device TIFilterBlock2
+2014-08-22T10:30:53.469507 tid5472 [IFO,Core] Did initialize device TIFilterBlock2
+2014-08-22T10:30:53.469507 tid5472 [IFO,Core] Will initialize device TIZDrive
+2014-08-22T10:30:53.531908 tid5472 [IFO,Core] Did initialize device TIZDrive
+2014-08-22T10:30:53.531908 tid5472 [IFO,Core] Will initialize device TIPFSOffset
+2014-08-22T10:30:53.719110 tid5472 [IFO,Core] Did initialize device TIPFSOffset
+2014-08-22T10:30:53.719110 tid5472 [IFO,Core] Will initialize device TIPFSStatus
+2014-08-22T10:30:53.781511 tid5472 [IFO,Core] Did initialize device TIPFSStatus
+2014-08-22T10:30:53.781511 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:30:53.781511 tid5472 [IFO,Core] Will initialize device TILightPath
+2014-08-22T10:30:53.968713 tid5472 [IFO,Core] Did initialize device TILightPath
+2014-08-22T10:30:53.968713 tid5472 [IFO,Core] Will initialize device XYStage
+2014-08-22T10:30:54.483520 tid5472 [IFO,Core] Did initialize device XYStage
+2014-08-22T10:30:54.483520 tid5472 [IFO,Core] Default xy stage set to XYStage
+2014-08-22T10:30:54.483520 tid5472 [IFO,Core] Will initialize device ZStage
+2014-08-22T10:30:54.577121 tid5472 [IFO,dev:ZStage]  ADEPT_XYPZ_SEQ
+                                   [              ] Motor Axes: X Y Z 
+                                   [              ] Axis Types: x x p 
+                                   [              ] CMDS: XYZFTR
+                                   [              ] BootLdr V:1
+                                   [              ] Hdwr REV.F
+                                   [              ] LL COMMANDS
+                                   [              ] RING BUFFER 250
+                                   [              ] SEARCH INDEX
+                                   [              ] ARRAY MODULE
+                                   [              ] IN0_INT
+                                   [              ] ADEPT
+                                   [              ] SEQUENCER
+                                   [              ] LED DIMMER
+                                   [              ] PLANAR CORRECTION
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Did initialize device ZStage
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Will initialize device Spectra
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Did initialize device Spectra
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Default shutter set to Spectra
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Will initialize device Wheel-A
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Did initialize device Wheel-A
+2014-08-22T10:30:54.623922 tid5472 [IFO,Core] Will initialize device ESioController
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Did initialize device ESioController
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Will initialize device ESIOSwitch
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Did initialize device ESIOSwitch
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Will initialize device ESIOShutter
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Did initialize device ESIOShutter
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-22T10:30:56.215142 tid5472 [IFO,Core] Will initialize device ScopeLED
+2014-08-22T10:30:56.386744 tid5472 [IFO,Core] Did initialize device ScopeLED
+2014-08-22T10:30:56.386744 tid5472 [IFO,Core] Default shutter set to ScopeLED
+2014-08-22T10:30:56.386744 tid5472 [IFO,Core] Will initialize device RappScanner
+2014-08-22T10:30:59.803188 tid5472 [IFO,Core] Did initialize device RappScanner
+2014-08-22T10:30:59.803188 tid5472 [IFO,Core] Default galvo set to RappScanner
+2014-08-22T10:30:59.803188 tid5472 [IFO,Core] Finished initializing 25 devices
+2014-08-22T10:30:59.803188 tid5472 [IFO,Core] Default camera set to Zyla
+2014-08-22T10:30:59.959190 tid5472 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-22T10:30:59.959190 tid5472 [IFO,Core] Default stage set to ZStage
+2014-08-22T10:31:02.377221 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:31:02.470822 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:31:03.391234 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:31:03.391234 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:31:03.594037 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:31:04.483248 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:31:04.483248 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:35:26.375396 tid5472 [IFO,App] Plugin command: Projector
+2014-08-22T10:37:23.699127 tid5472 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-22T10:37:23.767134 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:37:23.992156 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:37:23.993156 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:37:54.874244 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:37:54.897246 tid5348 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:37:54.991256 tid5348 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:37:56.594416 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:37:56.793436 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:37:56.794436 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:37:57.913548 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:37:58.137570 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:37:58.138571 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:00.265783 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:00.473804 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:38:00.474804 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:08.206577 tid4952 [IFO,dev:Zyla] [ThreadRun] Exception caught with Message: Exception[AT_ERR_HARDWARE_OVERFLOW] thrown: Internal Buffer Overflow: Slow Data retrieval from card/camera
+2014-08-22T10:38:08.207577 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:08.246581 tid4952 [IFO,dev:Zyla] [ThreadRun] Exception caught with Message: Exception[AT_ERR_HARDWARE_OVERFLOW] thrown: Internal Buffer Overflow: Slow Data retrieval from card/camera
+2014-08-22T10:38:08.246581 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:08.286585 tid4952 [IFO,dev:Zyla] [ThreadRun] Exception caught with Message: TDualCLTenTapLogicalDataSource: Error - Even, Odd buffers not the same
+2014-08-22T10:38:08.286585 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:08.326589 tid4952 [IFO,dev:Zyla] [ThreadRun] Exception caught with Message: TDualCLTenTapLogicalDataSource: Error - Even, Odd buffers not the same
+2014-08-22T10:38:08.326589 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:08.846641 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:09.366693 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:09.886745 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:10.406797 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:10.926849 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:11.446901 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:11.966953 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:12.487005 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:13.007057 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:13.527109 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:14.047161 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:14.567213 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:15.087265 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:15.607317 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:16.127369 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:16.647421 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:17.167473 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:17.626519 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:38:17.687525 tid4952 [IFO,dev:Zyla] [ThreadRun] WaitBuffer returned false, no data!
+2014-08-22T10:38:17.687525 tid4952 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:38:17.687525 tid4952 [IFO,dev:Zyla] [MySequenceThread::svc] Unknown Error occured
+2014-08-22T10:38:17.777534 tid4952 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:38:20.587815 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:38:20.596816 tid188 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:38:20.691826 tid188 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:38:22.912048 tid5472 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-22T10:38:23.001057 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:23.227079 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:38:23.228079 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:41.682925 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:38:41.709927 tid2876 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:38:41.799936 tid2876 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:38:42.331989 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:42.556012 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:38:42.556012 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:38:45.085265 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:38:45.094266 tid6012 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:38:45.184275 tid6012 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:39:21.301886 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:39:21.333889 tid5432 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:39:21.423898 tid5432 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:39:31.930949 tid5600 [IFO,App] 
+                                   [       ] java.lang.RuntimeException: Spots aren't detected as expected. Is DMD in focus and roughly centered in camera's field of view? in Thread[Projector calibration thread,6,main]
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.generateLinearMapping(ProjectorControlForm.java:420)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.access$100(ProjectorControlForm.java:91)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm$1.run(ProjectorControlForm.java:518)
+2014-08-22T10:39:39.954751 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:39:39.968753 tid4568 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:39:40.061762 tid4568 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:39:46.910447 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:39:46.926448 tid4816 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:39:47.016457 tid4816 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:39:55.581314 tid5460 [IFO,App] 
+                                   [       ] java.lang.RuntimeException: Spots aren't detected as expected. Is DMD in focus and roughly centered in camera's field of view? in Thread[Projector calibration thread,6,main]
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.generateLinearMapping(ProjectorControlForm.java:420)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.access$100(ProjectorControlForm.java:91)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm$1.run(ProjectorControlForm.java:518)
+2014-08-22T10:41:06.181373 tid5472 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-22T10:41:06.272382 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:06.498405 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:41:06.498405 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:07.952550 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:08.161571 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:41:08.162571 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:09.533708 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:09.761731 tid5472 [IFO,Core] Did update system state cache
+2014-08-22T10:41:09.762731 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:41:32.740029 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:41:32.754030 tid6068 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:41:32.846039 tid6068 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:41:41.337888 tid5480 [IFO,App] 
+                                   [       ] java.lang.RuntimeException: Spots aren't detected as expected. Is DMD in focus and roughly centered in camera's field of view? in Thread[Projector calibration thread,6,main]
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.generateLinearMapping(ProjectorControlForm.java:420)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.access$100(ProjectorControlForm.java:91)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm$1.run(ProjectorControlForm.java:518)
+2014-08-22T10:42:22.244979 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:42:22.250979 tid4700 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:42:22.346989 tid4700 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:42:30.749829 tid4836 [IFO,App] 
+                                   [       ] java.lang.RuntimeException: Spots aren't detected as expected. Is DMD in focus and roughly centered in camera's field of view? in Thread[Projector calibration thread,6,main]
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.generateLinearMapping(ProjectorControlForm.java:420)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.access$100(ProjectorControlForm.java:91)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm$1.run(ProjectorControlForm.java:518)
+2014-08-22T10:43:01.731927 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:43:01.753929 tid1768 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-22T10:43:01.846938 tid1768 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-22T10:43:10.303784 tid2144 [IFO,App] 
+                                   [       ] java.lang.RuntimeException: Spots aren't detected as expected. Is DMD in focus and roughly centered in camera's field of view? in Thread[Projector calibration thread,6,main]
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.generateLinearMapping(ProjectorControlForm.java:420)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm.access$100(ProjectorControlForm.java:91)
+                                   [       ]   at org.micromanager.projector.ProjectorControlForm$1.run(ProjectorControlForm.java:518)
+2014-08-22T10:43:19.708724 tid5472 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-22T10:43:19.715725 tid5472 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-22T10:43:22.110965 tid5472 [IFO,Core] Did unload all devices
+2014-08-22T10:43:22.110965 tid5472 [IFO,Core] System reset
+2014-08-22T10:43:22.747028 tid5472 [IFO,Core] Core session ended

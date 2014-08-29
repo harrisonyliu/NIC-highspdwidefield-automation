@@ -28,7 +28,7 @@ end
 %%Yes: Generate ROI
 %%Photoactivate Worm
 %%Go to next point
-
+close all
 if gui.isLiveModeOn() == 1
     gui.enableLiveMode(false);
 end
@@ -66,7 +66,7 @@ load('test_plate_raster_scan_positions.mat','xPositions','yPositions');
 tot_Positions = numel(xPositions);
 worm_Ims = cell(0);
 worm_FOVNum = [];
-figure(1);status_Plot = tight_subplot(2,3,[.01 .01],[.01 .01],[.01 .01]);
+figure(1);status_Plot = tight_subplot(2,3,[.05 .01],[.01 .05],[.01 .01]);
 set(figure(1),'WindowStyle','docked');
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
@@ -81,13 +81,14 @@ for i = 1:numel(xPositions)
     %     figure(2);imagesc(img);colormap gray;
     %
     %% Autofocus at the current FOV
-    cprintf('*black','Autofocusing...\n')
-    %     wormBool = autoFocus(mmc,gui,0.25);
-    wormBool = 1;
+    cprintf('*red','Autofocusing...\n')
+    [wormBool, normVar] = autoFocus(mmc,gui,0.25);
+    axes(status_Plot(3));plot(normVar,'b--');
+    title(['Scan Position ' num2str(i) ' Focus Curve']);
     
     %% Now snap a BF followed by a fluorescence image
     if wormBool == 1
-        cprintf('*black','Acquiring parallel images...\n')
+        cprintf('*blue','Acquiring parallel images...\n')
         imstack = acquireParallel(mmc,gui);
         gui.closeAllAcquisitions();
         
@@ -127,7 +128,7 @@ for i = 1:numel(xPositions)
     %     worm_FOVNum = [];
 end
 
-for i = 1:numel(worm_Ims)
-    figure();imagesc(worm_Ims{i});colormap gray;
-    title(['Worm ' num2str(i) ' in FOV number ' num2str(worm_FOVNum(i))]);
-end
+% for i = 1:numel(worm_Ims)
+%     figure();imagesc(worm_Ims{i});colormap gray;
+%     title(['Worm ' num2str(i) ' in FOV number ' num2str(worm_FOVNum(i))]);
+% end

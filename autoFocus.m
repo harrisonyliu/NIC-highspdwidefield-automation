@@ -1,4 +1,4 @@
-function wormBool = autoFocus(mmc,gui,scale)
+function [wormBool, normVar] = autoFocus(mmc,gui,scale)
 % Autofocusing script. Pass it the micromanager core object and the gui
 % object and this function will automatically take a 150um z-stack around
 % the current plane of focus (75um below, 75um above, 10um steps) using the
@@ -26,7 +26,7 @@ gui.loadAcquisition('C:\Users\nicuser\Desktop\cy3-BF-Acq');
 acqName = gui.runAcquisition();
 % Get the "cache", which is the image storage (works with either images
 % acquired to RAM or to disk):
-cprintf('red','Autofocus: Images acquired, reading into Matlab...\n');
+cprintf('red','Images acquired, reading into Matlab...\n');
 imgCache = gui.getAcquisitionImageCache(acqName);
 numSlices = gui.getAcquisitionSettings.slices.size;
 imstack = zeros(w*scale,h*scale,numSlices);
@@ -51,24 +51,24 @@ for i = 0:numSlices-1
     imstack(:,:,i+1) = imresize(transpose(img),scale);  % make column-major order for MATLAB
 end
 
-integrated_Im = var(var(imstack(:,:,1)))/mean(mean(imstack(:,:,1)));
-% thresh = 3.52 * 10^9;
-thresh = 4*10^8;
+im_var = var(var(imstack(:,:,1)))
+thresh = 3.85*10^14;
 %Now we pass the stack to find the optimal focus
-if integrated_Im < thresh
+if im_var > thresh
     cprintf('red','Autofocus: Calculating optimal focus...');
     optimalFocus = getFocus();
     %And now we return the piezo to its default and move the Ti Z drive to
     %correct focus. We are now ready to repeat this for the next FOV.
     gui.setStagePosition(0);
     mmc.setFocusDevice('TIZDrive');
-    move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange - 50;
-    cprintf('*red',['Autofocus: Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
+    move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange;% - 50;
+    cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
     gui.setRelativeStagePosition(move_Distance);
     wormBool = 1;
 else
     cprintf('*red','Autofocus: No worms detected, moving to next FOV\n')
     wormBool = 0;
+    normVar = [];
 end
 
 %% Troubleshooting section, comment out otherwise.

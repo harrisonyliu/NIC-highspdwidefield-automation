@@ -5,10 +5,10 @@ w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 
 %Acquire the image and save it to a file
-cprintf('blue','Imaging: Acquiring images');
+cprintf('blue','Imaging: Acquiring images...');
 gui.loadAcquisition('C:\Users\nicuser\Desktop\cy3-BF-Acq-Parallel');
 acqName = gui.runAcquisition();
-cprintf('blue','Imaging: Images acquired, reading into Matlab...\n');
+cprintf('blue','Images acquired, reading into Matlab...\n');
 imgCache = gui.getAcquisitionImageCache(acqName);
 numSlices = gui.getAcquisitionSettings.channels.size;
 imstack = zeros(w,h,numSlices);
