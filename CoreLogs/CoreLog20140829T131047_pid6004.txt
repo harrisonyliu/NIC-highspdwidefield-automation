@@ -2450,3 +2450,823 @@
 2014-08-29T13:54:47.513857 tid4904 [IFO,dev:TIFilterBlock2] Already at position; not moving
 2014-08-29T13:54:48.729979 tid2880 [IFO,dev:Zyla] Sequence thread exiting
 2014-08-29T13:54:49.389045 tid3440 [IFO,App] 16 images stored in 2193 ms.
+2014-08-29T14:02:31.038205 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:03:08.805982 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:09.442045 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:11.140215 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:11.182219 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:11.183219 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:11.183219 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:15.370638 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:15.370638 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:15.730674 tid2068 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:16.943795 tid7048 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:03:17.859887 tid7080 [IFO,App] 16 images stored in 2460 ms.
+2014-08-29T14:03:18.484949 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:03:19.103011 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:19.105011 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:19.105011 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:19.836085 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:19.836085 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:20.012102 tid7124 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:20.579159 tid7124 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:03:21.336235 tid7124 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:03:21.386240 tid7116 [IFO,App] 2 images stored in 1519 ms.
+2014-08-29T14:03:22.623363 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:22.666368 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:22.667368 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:22.668368 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:23.253426 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:23.253426 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:23.592460 tid5228 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:24.780579 tid6176 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:03:25.444645 tid5312 [IFO,App] 16 images stored in 2159 ms.
+2014-08-29T14:03:26.112712 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:03:26.513752 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:26.515752 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:26.515752 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:27.200821 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:27.200821 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:27.364837 tid6408 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:27.907892 tid6408 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:03:28.669968 tid6408 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:03:28.718973 tid5252 [IFO,App] 2 images stored in 1487 ms.
+2014-08-29T14:03:29.958097 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:30.005101 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:30.007102 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:30.007102 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:30.549156 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:30.549156 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:30.903191 tid6756 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:32.111312 tid6436 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:03:32.772378 tid6764 [IFO,App] 16 images stored in 2198 ms.
+2014-08-29T14:03:33.378439 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:03:34.305531 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:34.306531 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:34.306531 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:34.850586 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:34.850586 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:35.015602 tid2012 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:35.555656 tid2012 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:03:36.333734 tid2012 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:03:36.399741 tid6620 [IFO,App] 2 images stored in 1516 ms.
+2014-08-29T14:03:37.998901 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:38.045905 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:38.046905 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:38.046905 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:38.869988 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:38.869988 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:39.219023 tid6628 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:40.432144 tid7092 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:03:41.093210 tid6560 [IFO,App] 16 images stored in 2197 ms.
+2014-08-29T14:03:42.350336 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:03:42.389340 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:42.391340 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:42.391340 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:42.850386 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:03:42.850386 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:03:43.180419 tid7140 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:03:44.396540 tid6688 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:03:45.060607 tid6244 [IFO,App] 16 images stored in 2187 ms.
+2014-08-29T14:03:58.735974 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:10:48.894111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:10:49.526111 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:10:50.719111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:10:50.758111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:50.759111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:50.759111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:10:51.675111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:51.675111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:10:52.000111 tid6540 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:10:53.220111 tid5020 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:10:54.134111 tid6536 [IFO,App] 16 images stored in 2434 ms.
+2014-08-29T14:10:55.419111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:10:55.460111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:55.461111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:55.461111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:10:56.082111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:56.082111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:10:56.412111 tid6704 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:10:57.600111 tid2944 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:10:58.262111 tid6740 [IFO,App] 16 images stored in 2154 ms.
+2014-08-29T14:10:58.928111 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:10:59.380111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:59.381111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:10:59.382111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:00.062111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:00.062111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:00.242111 tid6388 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:00.789111 tid6388 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:11:01.556111 tid6388 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:11:01.628111 tid6384 [IFO,App] 2 images stored in 1523 ms.
+2014-08-29T14:11:02.900111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:02.940111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:02.942111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:02.942111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:03.745111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:03.745111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:04.092111 tid4960 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:05.318111 tid5816 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:05.973111 tid6868 [IFO,App] 16 images stored in 2198 ms.
+2014-08-29T14:11:06.620111 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:11:07.011111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:07.012111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:07.013111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:07.498111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:07.498111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:07.642111 tid6216 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:08.212111 tid6216 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:11:08.976111 tid6216 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:11:09.025111 tid6952 [IFO,App] 2 images stored in 1495 ms.
+2014-08-29T14:11:10.431111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:10.475111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:10.477111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:10.477111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:10.985111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:10.986111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:11.326111 tid5520 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:12.510111 tid5728 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:13.172111 tid6724 [IFO,App] 16 images stored in 2161 ms.
+2014-08-29T14:11:14.466111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:14.510111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:14.511111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:14.511111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:15.002111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:15.002111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:15.328111 tid6912 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:16.544111 tid6896 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:17.205111 tid6268 [IFO,App] 16 images stored in 2177 ms.
+2014-08-29T14:11:18.514111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:18.556111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:18.558111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:18.558111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:19.042111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:19.042111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:19.390111 tid7124 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:20.583111 tid5808 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:21.236111 tid7148 [IFO,App] 16 images stored in 2168 ms.
+2014-08-29T14:11:21.854111 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:11:22.095111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:22.097111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:22.097111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:22.617111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:22.617111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:22.775111 tid3776 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:23.347111 tid3776 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:11:24.121111 tid3776 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:11:24.192111 tid5500 [IFO,App] 2 images stored in 1545 ms.
+2014-08-29T14:11:25.429111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:25.470111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:25.471111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:25.471111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:25.972111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:25.972111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:26.299111 tid6288 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:27.495111 tid3436 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:28.180111 tid2788 [IFO,App] 16 images stored in 2180 ms.
+2014-08-29T14:11:29.509111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:29.554111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:29.556111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:29.556111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:30.027111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:30.027111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:30.366111 tid6228 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:31.553111 tid6712 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:32.212111 tid6480 [IFO,App] 16 images stored in 2156 ms.
+2014-08-29T14:11:33.528111 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:11:33.567111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:33.568111 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:33.568111 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:34.056111 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:11:34.056111 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:11:34.397111 tid6392 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:11:35.586111 tid5628 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:11:36.243111 tid6632 [IFO,App] 16 images stored in 2162 ms.
+2014-08-29T14:20:25.080111 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:21:17.649865 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:18.294929 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:19.981098 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:20.020102 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:20.021102 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:20.021102 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:20.594159 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:20.594159 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:20.932193 tid6936 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:22.147314 tid1004 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:23.061406 tid6316 [IFO,App] 16 images stored in 2439 ms.
+2014-08-29T14:21:23.697469 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:21:24.625562 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:24.626562 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:24.626562 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:25.284628 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:25.284628 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:25.427642 tid6908 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:25.941694 tid6908 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:21:26.681768 tid6908 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:21:26.747774 tid6380 [IFO,App] 2 images stored in 1432 ms.
+2014-08-29T14:21:27.964896 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:28.010901 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:28.012901 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:28.012901 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:28.613961 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:28.613961 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:28.955995 tid5332 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:30.147114 tid3960 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:30.806180 tid1736 [IFO,App] 16 images stored in 2162 ms.
+2014-08-29T14:21:31.436243 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:21:32.063306 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:32.064306 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:32.064306 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:32.653365 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:32.653365 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:32.820381 tid2808 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:33.334433 tid2808 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:21:34.103510 tid2808 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:21:34.174517 tid3348 [IFO,App] 2 images stored in 1468 ms.
+2014-08-29T14:21:35.420641 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:35.460645 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:35.462646 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:35.462646 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:35.937693 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:35.937693 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:36.295729 tid2068 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:37.504850 tid2428 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:38.166916 tid6920 [IFO,App] 16 images stored in 2202 ms.
+2014-08-29T14:21:38.813981 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:21:39.207020 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:39.209020 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:39.209020 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:39.723072 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:39.723072 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:39.862086 tid3720 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:40.374137 tid3720 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:21:41.122212 tid3720 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:21:41.185218 tid7112 [IFO,App] 2 images stored in 1431 ms.
+2014-08-29T14:21:42.607360 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:42.648364 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:42.649364 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:42.649364 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:43.217421 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:43.217421 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:43.552455 tid6412 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:44.745574 tid1300 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:45.399639 tid4564 [IFO,App] 16 images stored in 2156 ms.
+2014-08-29T14:21:46.701769 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:46.751774 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:46.753775 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:46.753775 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:47.260825 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:47.260825 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:47.592859 tid7148 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:48.802980 tid6552 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:49.463046 tid6400 [IFO,App] 16 images stored in 2179 ms.
+2014-08-29T14:21:50.765176 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:50.804180 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:50.806180 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:50.806180 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:51.301229 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:51.301229 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:51.651264 tid1916 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:52.834383 tid6276 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:21:53.495449 tid6296 [IFO,App] 16 images stored in 2171 ms.
+2014-08-29T14:21:54.115511 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:21:54.590558 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:54.592558 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:54.592558 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:55.077607 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:55.077607 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:55.220621 tid5312 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:55.766676 tid5312 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:21:56.529752 tid5312 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:21:56.572756 tid6324 [IFO,App] 2 images stored in 1463 ms.
+2014-08-29T14:21:57.786878 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:21:57.826882 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:57.828882 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:57.828882 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:58.329932 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:21:58.329932 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:21:58.688968 tid6476 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:21:59.872086 tid6376 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:22:00.535153 tid5396 [IFO,App] 16 images stored in 2172 ms.
+2014-08-29T14:22:01.821281 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:22:01.863285 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:01.865286 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:01.865286 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:22:02.350334 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:02.350334 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:22:02.689368 tid6152 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:22:03.905490 tid6892 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:22:04.567556 tid6356 [IFO,App] 16 images stored in 2192 ms.
+2014-08-29T14:22:05.841683 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:22:05.883687 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:05.884688 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:05.884688 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:22:06.381737 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:22:06.381737 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:22:06.721771 tid6516 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:22:07.904890 tid5696 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:22:08.567956 tid6740 [IFO,App] 16 images stored in 2163 ms.
+2014-08-29T14:31:47.578851 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:32:30.429136 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:33:53.598452 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:33:54.267519 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:33:55.931685 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:33:55.969689 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:33:55.970689 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:33:55.970689 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:00.642156 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:00.643156 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:01.021194 tid6968 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:02.242316 tid6736 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:34:03.861478 tid6320 [IFO,App] 16 images stored in 3158 ms.
+2014-08-29T14:34:05.169609 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:34:05.209613 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:05.210613 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:05.210613 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:06.184710 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:06.184710 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:06.525744 tid5888 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:07.753867 tid6752 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:34:09.045996 tid6988 [IFO,App] 16 images stored in 2835 ms.
+2014-08-29T14:34:10.476139 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:34:10.518144 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:10.520144 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:10.520144 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:11.755267 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:11.755267 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:12.105302 tid5176 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:13.373429 tid6864 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:34:14.038496 tid6648 [IFO,App] 16 images stored in 2261 ms.
+2014-08-29T14:34:39.475039 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:34:40.120104 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:41.644256 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:34:41.683260 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:41.685260 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:41.685260 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:42.662358 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:42.662358 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:43.007392 tid6224 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:44.247516 tid7124 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:34:46.038695 tid6768 [IFO,App] 16 images stored in 3349 ms.
+2014-08-29T14:34:46.800772 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:46.802772 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:46.802772 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:47.857877 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:34:47.857877 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:34:47.994891 tid6904 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:34:48.566948 tid6904 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:34:49.332025 tid6904 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:34:49.379029 tid6992 [IFO,App] 2 images stored in 1497 ms.
+2014-08-29T14:35:12.195311 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:12.862377 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:13.526444 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:13.567448 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:13.568448 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:13.568448 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:14.473539 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:14.473539 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:14.815573 tid6996 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:16.019693 tid6496 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:35:16.920783 tid6232 [IFO,App] 16 images stored in 2417 ms.
+2014-08-29T14:35:17.588850 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:17.589850 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:17.590850 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:19.022993 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:19.022993 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:19.161007 tid6972 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:19.704062 tid6972 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:35:20.457137 tid6972 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:35:20.510142 tid6340 [IFO,App] 2 images stored in 1462 ms.
+2014-08-29T14:35:21.850276 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:21.891280 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:21.892280 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:21.892280 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:22.747366 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:22.747366 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:23.138405 tid1740 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:24.323523 tid5928 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:35:24.985590 tid7080 [IFO,App] 16 images stored in 2206 ms.
+2014-08-29T14:35:25.751666 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:25.752666 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:25.752666 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:26.623753 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:26.623753 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:26.783769 tid7000 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:27.288820 tid7000 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:35:28.049896 tid7000 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:35:28.097901 tid6392 [IFO,App] 2 images stored in 1447 ms.
+2014-08-29T14:35:45.811672 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:46.458737 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:47.540845 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:47.578849 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:47.579849 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:47.579849 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:48.711962 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:48.711962 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:49.057997 tid2052 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:50.246115 tid6768 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:35:51.162207 tid3720 [IFO,App] 16 images stored in 2426 ms.
+2014-08-29T14:35:51.781269 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:51.782269 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:51.782269 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:52.554346 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:52.555346 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:52.703361 tid6976 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:53.273418 tid6976 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:35:54.011492 tid6976 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:35:54.080499 tid6992 [IFO,App] 2 images stored in 1502 ms.
+2014-08-29T14:35:55.303621 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:35:55.350626 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:55.351626 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:55.351626 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:56.119703 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:56.119703 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:35:56.451736 tid6476 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:35:57.675858 tid7152 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:35:58.330924 tid904 [IFO,App] 16 images stored in 2185 ms.
+2014-08-29T14:35:58.939985 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:35:59.741065 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:59.743065 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:35:59.743065 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:00.508142 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:00.508142 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:00.674158 tid6320 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:01.242215 tid6320 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:02.003291 tid6320 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:02.048296 tid4924 [IFO,App] 2 images stored in 1511 ms.
+2014-08-29T14:36:03.311422 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:03.363427 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:03.364427 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:03.364427 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:04.279519 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:04.280519 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:04.613552 tid4424 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:05.803671 tid7164 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:06.458737 tid6632 [IFO,App] 16 images stored in 2153 ms.
+2014-08-29T14:36:07.069798 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:36:08.059897 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:08.060897 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:08.061897 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:08.786969 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:08.786969 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:08.950986 tid6984 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:09.466037 tid6984 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:10.235114 tid6984 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:10.305121 tid5372 [IFO,App] 2 images stored in 1483 ms.
+2014-08-29T14:36:11.802271 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:11.844275 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:11.845275 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:11.845275 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:12.668357 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:12.668357 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:12.995390 tid6360 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:14.185509 tid6676 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:14.842575 tid4816 [IFO,App] 16 images stored in 2148 ms.
+2014-08-29T14:36:15.435634 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:36:15.948685 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:15.950686 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:15.950686 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:16.745765 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:16.745765 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:16.889780 tid6472 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:17.434834 tid6472 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:18.189910 tid6472 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:18.239915 tid6760 [IFO,App] 2 images stored in 1467 ms.
+2014-08-29T14:36:19.497040 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:19.538044 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:19.539044 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:19.539044 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:20.719162 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:20.719162 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:21.061197 tid6572 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:22.254316 tid3776 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:22.907381 tid3180 [IFO,App] 16 images stored in 2161 ms.
+2014-08-29T14:36:23.547445 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:36:24.055496 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:24.057496 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:24.057496 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:24.867577 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:24.867577 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:25.022593 tid6520 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:25.531644 tid6520 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:26.301721 tid6520 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:26.368727 tid6228 [IFO,App] 2 images stored in 1473 ms.
+2014-08-29T14:36:27.628853 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:27.672858 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:27.674858 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:27.674858 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:28.443935 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:28.443935 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:28.834974 tid6380 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:30.025093 tid6780 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:30.684159 tid6336 [IFO,App] 16 images stored in 2177 ms.
+2014-08-29T14:36:31.300220 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:36:31.989289 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:31.991290 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:31.991290 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:32.778368 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:32.778368 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:32.925383 tid1164 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:33.467437 tid1164 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:34.225513 tid1164 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:34.279518 tid6544 [IFO,App] 2 images stored in 1471 ms.
+2014-08-29T14:36:35.518642 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:35.571648 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:35.572648 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:35.572648 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:36.837774 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:36.837774 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:37.232814 tid6428 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:38.443935 tid6184 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:39.101000 tid3844 [IFO,App] 16 images stored in 2183 ms.
+2014-08-29T14:36:39.737064 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:39.739064 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:39.739064 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:40.526143 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:40.526143 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:40.667157 tid5212 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:41.212212 tid5212 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:41.974288 tid5212 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:42.017292 tid6584 [IFO,App] 2 images stored in 1467 ms.
+2014-08-29T14:36:43.244415 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:43.288419 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:43.289419 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:43.289419 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:44.182509 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:44.182509 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:44.521542 tid5284 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:45.713662 tid6404 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:46.363727 tid6876 [IFO,App] 16 images stored in 2155 ms.
+2014-08-29T14:36:47.049795 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:47.051795 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:47.051795 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:47.857876 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:47.858876 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:48.030893 tid6668 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:48.603951 tid6668 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:49.363027 tid6668 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:49.410031 tid6636 [IFO,App] 2 images stored in 1487 ms.
+2014-08-29T14:36:50.579148 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:36:50.619152 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:50.621152 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:50.621152 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:51.382228 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:51.382228 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:51.755266 tid3504 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:52.980388 tid6996 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:36:53.628453 tid968 [IFO,App] 16 images stored in 2183 ms.
+2014-08-29T14:36:54.229513 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:54.231513 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:54.231513 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:55.020592 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:36:55.021592 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:36:55.167607 tid5520 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:36:55.708661 tid5520 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:36:56.463737 tid5520 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:36:56.513742 tid6084 [IFO,App] 2 images stored in 1468 ms.
+2014-08-29T14:38:01.939283 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:02.596349 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:04.311521 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:04.350525 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:04.351525 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:04.351525 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:05.819671 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:05.819671 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:06.157705 tid3656 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:07.339823 tid6572 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:08.256915 tid6152 [IFO,App] 16 images stored in 2408 ms.
+2014-08-29T14:38:08.883978 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:09.630052 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:09.632053 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:09.632053 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:10.520141 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:10.520141 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:10.654155 tid5312 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:11.231213 tid5312 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:11.989288 tid5312 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:12.038293 tid6672 [IFO,App] 2 images stored in 1488 ms.
+2014-08-29T14:38:13.262416 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:13.301420 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:13.303420 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:13.303420 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:14.074497 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:14.074497 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:14.409530 tid6312 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:15.627652 tid6264 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:16.287718 tid6784 [IFO,App] 16 images stored in 2187 ms.
+2014-08-29T14:38:16.889778 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:17.277817 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:17.278817 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:17.279817 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:18.046894 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:18.046894 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:18.216911 tid6544 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:18.751965 tid6544 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:19.520041 tid6544 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:19.592049 tid1164 [IFO,App] 2 images stored in 1514 ms.
+2014-08-29T14:38:20.884178 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:20.924182 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:20.925182 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:20.925182 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:21.682258 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:21.682258 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:22.027292 tid7052 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:23.218411 tid2844 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:23.873477 tid6492 [IFO,App] 16 images stored in 2166 ms.
+2014-08-29T14:38:24.506540 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:24.958585 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:24.959585 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:24.960585 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:25.850674 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:25.850674 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:26.013691 tid6600 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:26.592749 tid6600 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:27.350824 tid6600 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:27.397829 tid1172 [IFO,App] 2 images stored in 1517 ms.
+2014-08-29T14:38:29.029992 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:29.073997 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:29.074997 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:29.074997 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:29.811070 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:29.811070 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:30.157105 tid6208 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:31.339223 tid6604 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:32.001289 tid6348 [IFO,App] 16 images stored in 2163 ms.
+2014-08-29T14:38:32.594349 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:33.468436 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:33.470436 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:33.470436 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:34.384528 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:34.384528 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:34.534543 tid6668 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:35.104600 tid6668 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:35.878677 tid6668 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:35.949684 tid4276 [IFO,App] 2 images stored in 1537 ms.
+2014-08-29T14:38:37.173807 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:37.220811 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:37.222811 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:37.222811 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:38.239913 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:38.239913 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:38.607950 tid7084 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:39.820071 tid2012 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:40.482137 tid6740 [IFO,App] 16 images stored in 2183 ms.
+2014-08-29T14:38:41.108200 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:41.504240 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:41.506240 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:41.506240 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:42.988388 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:42.988388 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:43.140403 tid6240 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:43.681457 tid6240 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:44.427532 tid6240 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:44.486538 tid1288 [IFO,App] 2 images stored in 1468 ms.
+2014-08-29T14:38:45.859675 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:45.903679 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:45.905680 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:45.905680 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:47.088798 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:47.088798 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:47.441833 tid4816 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:48.672956 tid6560 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:49.346024 tid6960 [IFO,App] 16 images stored in 2228 ms.
+2014-08-29T14:38:49.962085 tid6044 [IFO,Core] Default stage set to TIZDrive
+2014-08-29T14:38:50.365126 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:50.366126 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:50.367126 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:51.149204 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:51.149204 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:51.306220 tid844 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:51.873276 tid844 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:52.640353 tid844 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:52.712360 tid4904 [IFO,App] 2 images stored in 1535 ms.
+2014-08-29T14:38:53.959485 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:38:53.999489 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:54.001489 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:54.001489 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:54.797569 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:54.797569 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:55.151604 tid4336 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:56.365726 tid6872 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:38:57.026792 tid7000 [IFO,App] 16 images stored in 2202 ms.
+2014-08-29T14:38:57.624851 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:57.625852 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:57.625852 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:58.412930 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:38:58.413930 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:38:58.559945 tid6460 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:38:59.138003 tid6460 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:38:59.887078 tid6460 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:38:59.951084 tid5704 [IFO,App] 2 images stored in 1511 ms.
+2014-08-29T14:39:01.235212 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:39:01.275216 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:01.276217 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:01.276217 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:02.132302 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:02.132302 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:02.477337 tid5312 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:39:03.663455 tid6704 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:39:04.322521 tid6536 [IFO,App] 16 images stored in 2164 ms.
+2014-08-29T14:39:04.945583 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:04.947584 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:04.947584 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:05.705659 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:05.705659 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:05.859675 tid6488 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:39:06.433732 tid6488 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:39:07.193808 tid6488 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:39:07.239813 tid3720 [IFO,App] 2 images stored in 1509 ms.
+2014-08-29T14:39:08.449934 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:39:08.488938 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:08.490938 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:08.490938 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:09.256014 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:09.256014 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:09.580047 tid6544 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:39:10.766165 tid6356 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:39:11.426231 tid6520 [IFO,App] 16 images stored in 2145 ms.
+2014-08-29T14:39:12.131302 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:12.133302 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:12.133302 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:12.896378 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:12.896378 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:13.027392 tid6596 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:39:13.602449 tid6596 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:39:14.378527 tid6596 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:39:14.443533 tid6068 [IFO,App] 2 images stored in 1520 ms.
+2014-08-29T14:39:51.748263 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:39:51.748263 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:52.004289 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:39:52.005289 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:52.005289 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:55.332622 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:39:55.332622 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:39:55.588647 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:39:55.588647 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:39:55.588647 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:40:30.329121 tid5344 [IFO,App] Plugin command: Multi-Channel Shading
+2014-08-29T14:42:37.067794 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:42:37.067794 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:42:37.322819 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:42:37.323819 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:42:37.323819 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:20.768163 tid5344 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-29T14:44:20.837169 tid6188 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-29T14:44:20.927178 tid6188 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:44:28.007886 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:44:28.655951 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:44:30.302116 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:44:30.341120 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:30.343120 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:30.343120 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:31.450231 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:31.450231 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:31.805266 tid5176 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:44:32.987384 tid4068 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:44:33.905476 tid4392 [IFO,App] 16 images stored in 2429 ms.
+2014-08-29T14:44:34.539540 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:34.541540 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:34.541540 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:35.766662 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:35.766662 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:35.929679 tid5976 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:44:36.496735 tid5976 [IFO,Core] Default shutter set to ESIOShutter
+2014-08-29T14:44:37.267812 tid5976 [IFO,Core] Default shutter set to ScopeLED
+2014-08-29T14:44:37.336819 tid1288 [IFO,App] 2 images stored in 1537 ms.
+2014-08-29T14:44:38.630949 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:44:38.672953 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:38.673953 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:38.673953 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:39.860072 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:39.860072 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:40.184104 tid6316 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:44:41.380224 tid7008 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:44:42.033289 tid6592 [IFO,App] 16 images stored in 2144 ms.
+2014-08-29T14:44:49.969082 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:44:49.969082 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:44:50.225108 tid5344 [IFO,Core] Did update system state cache
+2014-08-29T14:44:50.226108 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:44:50.226108 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:45:02.471332 tid6888 [IFO,App] 
+                                   [       ] org.micromanager.utils.MMScriptException: MMScript error: Undefined acquisition name: Snap/Live Window in Thread[Display thread,6,main]
+                                   [       ]   at org.micromanager.acquisition.AcquisitionManager.getAcquisition(AcquisitionManager.java:134)
+                                   [       ]   at org.micromanager.MMStudioMainFrame.addImage(MMStudioMainFrame.java:3687)
+                                   [       ]   at org.micromanager.acquisition.LiveModeTimer$1.show(LiveModeTimer.java:106)
+                                   [       ]   at org.micromanager.MMStudioMainFrame$47.run(MMStudioMainFrame.java:1456)
+2014-08-29T14:45:02.500335 tid6492 [IFO,App] Stop called in LivemodeTimer, true
+2014-08-29T14:45:02.500335 tid6888 [IFO,App] Thread 7095 (Display thread) terminated with uncaught exception
+2014-08-29T14:45:02.500335 tid6888 [IFO,App] java.lang.NullPointerException
+2014-08-29T14:45:02.500335 tid6888 [IFO,App]   at org.micromanager.acquisition.LiveModeTimer$1.show(LiveModeTimer.java:101)
+2014-08-29T14:45:02.500335 tid6888 [IFO,App]   at org.micromanager.MMStudioMainFrame$47.run(MMStudioMainFrame.java:1456)
+2014-08-29T14:45:02.544340 tid6584 [IFO,dev:Zyla] [svc] SeqAcquisition interrupted by the user
+2014-08-29T14:45:02.635349 tid6584 [IFO,dev:Zyla] Sequence thread exiting
+2014-08-29T14:45:20.435129 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:45:21.081193 tid6044 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:45:22.146300 tid6044 [IFO,Core] Default stage set to ZStage
+2014-08-29T14:45:22.183303 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:45:22.185304 tid5344 [IFO,Core] Channel group set to Channel
+2014-08-29T14:45:22.185304 tid5344 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:45:23.501435 tid6044 [IFO,Core] Channel group set to Channel
+2014-08-29T14:45:23.501435 tid6044 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-08-29T14:45:23.840469 tid2052 [IFO,dev:TIFilterBlock2] Already at position; not moving
+2014-08-29T14:45:25.024588 tid6844 [IFO,dev:Zyla] Sequence thread exiting

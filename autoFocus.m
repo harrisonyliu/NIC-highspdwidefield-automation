@@ -68,7 +68,7 @@ if im_var > thresh
 else
     cprintf('*red','Autofocus: No worms detected, moving to next FOV\n')
     wormBool = 0;
-    normVar = [];
+    optimalFocus = getFocus();
 end
 
 %% Troubleshooting section, comment out otherwise.

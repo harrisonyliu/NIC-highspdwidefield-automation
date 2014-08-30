@@ -85,6 +85,7 @@ for i = 1:numel(xPositions)
     [wormBool, normVar] = autoFocus(mmc,gui,0.25);
     axes(status_Plot(3));plot(normVar,'b--');
     title(['Scan Position ' num2str(i) ' Focus Curve']);
+    wormBool = 1;
     
     %% Now snap a BF followed by a fluorescence image
     if wormBool == 1
