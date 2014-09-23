@@ -1,4 +1,4 @@
-function imstack = acquireParallel(mmc,gui)
+function imstack = acquireParallel(mmc,gui,drkfield,correction_Im,correction_Im_FL)
 %This function will take a full resolution image of the current FOV. It
 %will take one BF and one fluorescence image and save the images.
 w = mmc.getImageWidth();
@@ -18,10 +18,6 @@ for i = 0:numSlices-1
     ti = imgCache.getImage(i,0,0,0);
     % ti = imgCache.getImage(chanIdx, sliceIdx, frameIdx, posIdx);
     % (Indices count from zero.)
-    
-    % Get the necessary info for conversion from the image tags:
-    %     width = ti.tags.get('Width');
-    %     height = ti.tags.get('Height');
     pixelType = ti.tags.get('PixelType');
     if strcmp(pixelType, 'GRAY16')
         matlabType = 'uint16';
@@ -30,6 +26,8 @@ for i = 0:numSlices-1
     end
     img = typecast(ti.pix, matlabType);   % pixels must be interpreted as unsigned integers
     img = reshape(img, [w, h]); % image should be interpreted as a 2D array
-    imstack(:,:,i+1) = transpose(img);  % make column-major order for MATLAB
-%     figure();imagesc(transpose(img));colormap gray;
+    imstack(:,:,i+1) = transpose(double(img));  % make column-major order for MATLAB
 end
+
+imstack(:,:,1) = (imstack(:,:,1) - drkfield) ./ correction_Im;
+imstack(:,:,2) = (imstack(:,:,2) - drkfield) ./ correction_Im_FL;

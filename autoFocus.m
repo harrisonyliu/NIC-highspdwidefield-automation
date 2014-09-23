@@ -1,4 +1,4 @@
-function [wormBool, normVar] = autoFocus(mmc,gui,scale)
+function [normVar, focusSuccess_Bool] = autoFocus(mmc,gui,scale,correction_Im)
 % Autofocusing script. Pass it the micromanager core object and the gui
 % object and this function will automatically take a 150um z-stack around
 % the current plane of focus (75um below, 75um above, 10um steps) using the
@@ -18,7 +18,6 @@ mmc.setFocusDevice('ZStage'); %Piezo
 %to 4, prepare the exposure and set up the Cy3-BF imaging filters and LEDs
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
-
 %Now we acquire an image stack
 cprintf('red','Autofocus: Acquiring images...');
 gui.loadAcquisition('C:\Users\nicuser\Desktop\cy3-BF-Acq');
@@ -48,32 +47,34 @@ for i = 0:numSlices-1
     end
     img = typecast(ti.pix, matlabType);   % pixels must be interpreted as unsigned integers
     img = reshape(img, [w, h]); % image should be interpreted as a 2D array
-    imstack(:,:,i+1) = imresize(transpose(img),scale);  % make column-major order for MATLAB
+    imstack(:,:,i+1) = imresize(transpose(double(img)./correction_Im),scale);  % make column-major order for MATLAB
 end
 
-im_var = var(var(imstack(:,:,1)))
-thresh = 3.85*10^14;
 %Now we pass the stack to find the optimal focus
-if im_var > thresh
-    cprintf('red','Autofocus: Calculating optimal focus...');
-    optimalFocus = getFocus();
+cprintf('red','Autofocus: Calculating optimal focus...');
+[optimalFocus, maxVal] = getFocus();
+%To make sure we are actually focusing on something we set a threshold for
+%the normalized variance, just in case some fluorescent dust out of focus
+%triggers the autofocus routine.
+thresh = 0;
+maxVal
+if maxVal > thresh
     %And now we return the piezo to its default and move the Ti Z drive to
     %correct focus. We are now ready to repeat this for the next FOV.
     gui.setStagePosition(0);
     mmc.setFocusDevice('TIZDrive');
-    move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange;% - 50;
+    move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange - 50;
     cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
     gui.setRelativeStagePosition(move_Distance);
-    wormBool = 1;
+    focusSuccess_Bool = 1;
 else
-    cprintf('*red','Autofocus: No worms detected, moving to next FOV\n')
-    wormBool = 0;
-    optimalFocus = getFocus();
+    cprintf('red',['Unable to determine correct focus...canceling image acquisition\n'])
+    focusSuccess_Bool = 0;
 end
 
 %% Troubleshooting section, comment out otherwise.
 % And here we snap a picture and montage it to ensure we have focused
-
+%
 % w = mmc.getImageWidth();
 % h = mmc.getImageHeight();
 % bd = mmc.getImageBitDepth();
@@ -87,7 +88,7 @@ end
 %     num2str(optimalFocus) ' of ' num2str(size(imstack,3)) ')']);
 
 %% Get focus function
-    function frameNum = getFocus()
+    function [frameNum, maxVal] = getFocus()
         % This function receives an x by y by n image stack and will return the
         % frame number with the best focus as determined by the highest normalized variance
         imLinearElements = numel(imstack(:,:,1));
@@ -99,9 +100,10 @@ end
             normVar(i) = var(temp) / mean(temp);
         end
         
-        frameNum = find(normVar == max(normVar));
-%         figure();plot(normVar,'b*--');
-%         title('Normalized Variance Focus Curve');
+        maxVal = max(normVar);
+        frameNum = find(normVar == maxVal);
+        %         figure();plot(normVar,'b*--');
+        %         title('Normalized Variance Focus Curve');
     end
 
 end
