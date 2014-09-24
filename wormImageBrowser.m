@@ -22,7 +22,7 @@ function varargout = wormImageBrowser(varargin)
 
 % Edit the above text to modify the response to help wormImageBrowser
 
-% Last Modified by GUIDE v2.5 23-Sep-2014 12:33:07
+% Last Modified by GUIDE v2.5 23-Sep-2014 16:22:59
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -62,6 +62,10 @@ set(handles.slider1,'SliderStep',[1/maxNum , 10/maxNum]);
 
 % Choose default command line output for wormImageBrowser
 handles.output = hObject;
+
+%This array keeps track of all the bad images we do not wish to keep in our
+%final, curated image set
+handles.badImages = [];
 
 % Update handles structure
 guidata(hObject, handles);
@@ -116,15 +120,24 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 function changeImage(hObject, eventdata, handles, moveAmt)
 imNum = round(get(handles.slider1,'Value')) + moveAmt;
 
+%Two possibilities: a.) The image is out of bounds or b.) The image is on
+%the "bad image" list and thus should not be displayed. First check to see
+%if the image is within the acceptable range. If not then don't allow the
+%image to change
+
 if imNum < 0
     imNum = 1;
 elseif imNum > numel(handles.current_data)
     imNum = numel(handles.current_data);
+    %Now let's check to make sure that the image we want to look at is not
+    %on the list of banned images. If it is, keep moving!
+elseif numel(find(handles.badImages == imNum)) > 0
+    changeImage(hObject, eventdata, handles, moveAmt + sign(moveAmt));
+else
+    set(handles.slider1,'Value',imNum);
+    imagesc(handles.current_data{imNum});colormap gray;axis off;axis image;
+    title(['Worm ' num2str(imNum) ' of ' num2str(numel(handles.current_data))]);
 end
-
-set(handles.slider1,'Value',imNum);
-imagesc(handles.current_data{imNum});colormap gray;axis off;axis image;
-title(['Worm ' num2str(imNum) ' of ' num2str(numel(handles.current_data))]);
 
 % --- Executes on key press with focus on figure1 and none of its controls.
 function figure1_KeyPressFcn(hObject, eventdata, handles)
@@ -151,5 +164,46 @@ if strcmp(eventdata.Key,'downarrow') == 1
 end
 
 if strcmp(eventdata.Key,'1') == 1
-    disp('Hello')
+    imNum = round(get(handles.slider1,'Value'));
+    handles.badImages = [handles.badImages imNum];
+    changeImage(hObject, eventdata, handles, -1)
+    guidata(hObject,handles); %REMEMBER TO UPDATE THE HANDLES STRUCTURE!!!
+end
+
+
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% save(handles.current_data);
+fname = [get(handles.edit1,'String') '.mat'];
+truncated_Images = handles.current_data;
+badImages = unique(handles.badImages(find(handles.badImages > 0)));
+numel(truncated_Images);
+numel(handles.badImages);
+truncated_Images(badImages) = [];
+numel(truncated_Images);
+save(fname,'truncated_Images');
+
+
+function edit1_Callback(hObject, eventdata, handles)
+% hObject    handle to edit1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit1 as text
+%        str2double(get(hObject,'String')) returns contents of edit1 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
 end

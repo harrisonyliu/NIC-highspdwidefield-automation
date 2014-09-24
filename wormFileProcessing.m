@@ -1,12 +1,17 @@
 close all
 
 %% Reading in images for analysis
+%To use this simply change the root directory to the folder that contains
+%the images taken by micromanager. This assumes you used the "save as image
+%stack" option and that each FOV is contained within its own folder
 root = 'E:\Harrison';
 w = 2048;
 h = 2048;
 D = dir(root);
-imstack = cell(1,numel(D)-2);
+numIm = numel(D) - 2;
+imstack = cell(1,numIm);
 for i = 3:numel(D)
+    cprintf('*black',['Reading image ' num2str(i-2) ' of ' num2str(numIm) '\n'])
     fname_temp = fullfile(root, D(i).name);
     imname = dir(fname_temp);
     fname = fullfile(fname_temp,imname(3).name);
