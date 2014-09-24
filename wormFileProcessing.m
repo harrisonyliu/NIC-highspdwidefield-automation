@@ -1,10 +1,15 @@
-close all
+function worms = wormFileProcessing(root)
+%Give this function the root directory of the worm images you wish to
+%analyze and it will automatically load the images, crop out the worms and
+%return the result. It will also open up a GUI to browse through the worm
+%images and allow images to be removed/added.
 
 %% Reading in images for analysis
 %To use this simply change the root directory to the folder that contains
 %the images taken by micromanager. This assumes you used the "save as image
 %stack" option and that each FOV is contained within its own folder
-root = 'E:\Harrison';
+% root = 'E:\Harrison';
+root = 'G:\2014.09.16 lipl-4 imaging';
 w = 2048;
 h = 2048;
 D = dir(root);

@@ -13,9 +13,12 @@ autoFocusStepSize = 10; %Amount piezo will step to autofocus, units in um
 autoFocusHalfRange = 75; %E.g. autofocus will scan 75um above and below the current focal plane for a total range of 150um and a half range of 75um
 
 %% Focusing script
+%Need to move up a little at first to get an optimized focus curve (BF
+%autofocus tends to be about 50um higher than the fluorescence autofocus,
+%we use BF to focus since it is about an order of magnitude faster)
+gui.setRelativeStagePosition(30);
 mmc.setFocusDevice('ZStage'); %Piezo
-%Here we prepare the autofocus image acquisition parameters. We set binning
-%to 4, prepare the exposure and set up the Cy3-BF imaging filters and LEDs
+%Here we prepare the autofocus image acquisition parameters.
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 %Now we acquire an image stack

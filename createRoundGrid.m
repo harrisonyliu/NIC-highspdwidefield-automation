@@ -3,8 +3,8 @@ function [xPositions yPositions] = createRoundGrid(mmc)
 
 %% Input parameters
 %Center of the dish at location [-12500, 8500] (units are in um)
-homeX = -12500;
-homeY = 8500;
+homeX = 9800;
+homeY = -3800;
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 % w = 2048;
@@ -13,7 +13,7 @@ h = mmc.getImageHeight();
 petriDiam = 50000;
 %How many fields of view to trim around the borders of the petri dish to
 %ensure that edge effects are not captured. MUST BE AN INTEGER AMOUNT!!!
-trim_amount = 3;
+trim_amount = 2;
 
 %% Now to create the raster scan pattern, we assume home is at (0,0) for now
 pixSize = mmc.getPixelSizeUm();
@@ -87,7 +87,7 @@ for i = 2:numel(nonEmpty)
     idx = idx + numel(X_columns{nonEmpty(i)});
 end
 
-save('50mm_plate_raster_scan_positions.mat','xPositions','yPositions');
+save('50mm_plate_raster_scan_positions_fixed.mat','xPositions','yPositions');
 
 %% Debugging section, comment out otherwise
 figure();plot(X,Y,'b.');title('Round Grid Creation');

@@ -166,7 +166,7 @@ end
 if strcmp(eventdata.Key,'1') == 1
     imNum = round(get(handles.slider1,'Value'));
     handles.badImages = [handles.badImages imNum];
-    changeImage(hObject, eventdata, handles, -1)
+    changeImage(hObject, eventdata, handles, 1)
     guidata(hObject,handles); %REMEMBER TO UPDATE THE HANDLES STRUCTURE!!!
 end
 
