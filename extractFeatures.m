@@ -2,7 +2,7 @@ function res = extractFeatures(im, total_area)
 % Features that are used: 1. % of fluorescent pixels that are in puncta, 2. % of worm
 % that is fluorescent, 3. % of pixels that are fluorescent and above a
 % threshold, 4. normalized variance of the image, 5. gradient magnitude of
-% the image normalized by total fluorescent area.
+% the image normalized by total fluorescent area. 6. avg. fluorescence
 res = zeros(1,5);
 thresh = graythresh(im);
 fl_area = pixAboveThresh(thresh);
@@ -27,7 +27,7 @@ res(5) = log(normGradMag());
         lowFilt = conv2(im,low,'same');
         filtIm = highFilt - lowFilt;
         filtIm(filtIm < 0) = 0;
-        figure();imshowpair(im,filtIm,'montage');title('Original          Filtered');
+%         figure();imshowpair(im,filtIm,'montage');title('Original          Filtered');
 %         figure();imagesc(highFilt);colormap gray;
 %         figure();imagesc(lowFilt);colormap gray;
         numPuncta = sum(sum(filtIm));
