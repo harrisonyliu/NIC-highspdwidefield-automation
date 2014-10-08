@@ -64,7 +64,7 @@ X = X + homeX;
 Y = Y + homeY;
 
 %Find the total number of positions to scan through
-numFOVs = numel(X) - sum(sum(isnan(X)))
+numFOVs = numel(X) - sum(sum(isnan(X)));
 
 %Now to create the final list of positions to scan through
 xPositions = zeros(numFOVs,1);
