@@ -16,7 +16,7 @@ autoFocusHalfRange = 75; %E.g. autofocus will scan 75um above and below the curr
 %Need to move up a little at first to get an optimized focus curve (BF
 %autofocus tends to be about 50um higher than the fluorescence autofocus,
 %we use BF to focus since it is about an order of magnitude faster)
-gui.setRelativeStagePosition(30);
+gui.setRelativeStagePosition(50);
 mmc.setFocusDevice('ZStage'); %Piezo
 %Here we prepare the autofocus image acquisition parameters.
 w = mmc.getImageWidth();
