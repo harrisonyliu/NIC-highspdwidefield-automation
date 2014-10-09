@@ -9,7 +9,7 @@ function worms = wormFileProcessing(root)
 %the images taken by micromanager. This assumes you used the "save as image
 %stack" option and that each FOV is contained within its own folder
 % root = 'E:\Harrison';
-root = 'G:\2014.09.16 lipl-4 imaging';
+root = 'D:\2014.10.03 Worm Imaging\lipl4\First 30';
 w = 2048;
 h = 2048;
 D = dir(root);

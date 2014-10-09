@@ -2,9 +2,9 @@ close all
 clear all
 
 %% Loading data
-load('lgg1curated.mat');
+load('lgg1training.mat');
 lgg1 = truncated_Images;
-load('lipl4headcropped.mat');
+load('lipl4training.mat');
 lipl4 = truncated_Images;
 
 %% Extracting features
