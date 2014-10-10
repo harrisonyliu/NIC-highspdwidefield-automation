@@ -156,11 +156,11 @@ for i = 1:numel(xPositions)
         title(['Scan Position ' num2str(i) ' ID worms']);axis image;
         
         %Now we send the worm images to have their features extracted
-        res = zeros(numel(cropped),5);
-        for i = 1:numel(cropped)
-            res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
-        end
-        res
+%         res = zeros(numel(cropped),5);
+%         for i = 1:numel(cropped)
+%             res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
+%         end
+%         res
         
         %And classify the worms based on the extracted features
 %         class = svmClassify(svmModel, res);

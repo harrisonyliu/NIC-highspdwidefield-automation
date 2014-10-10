@@ -56,24 +56,15 @@ end
 %Now we pass the stack to find the optimal focus
 cprintf('red','Autofocus: Calculating optimal focus...');
 [optimalFocus, maxVal] = getFocus();
-%To make sure we are actually focusing on something we set a threshold for
-%the normalized variance, just in case some fluorescent dust out of focus
-%triggers the autofocus routine.
-thresh = 60;
-maxVal
-if maxVal > thresh
-    %And now we return the piezo to its default and move the Ti Z drive to
-    %correct focus. We are now ready to repeat this for the next FOV.
-    gui.setStagePosition(0);
-    mmc.setFocusDevice('TIZDrive');
-    move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange - 50;
-    cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
-    gui.setRelativeStagePosition(move_Distance);
-    focusSuccess_Bool = 1;
-else
-    cprintf('red',['Unable to determine correct focus...canceling image acquisition\n'])
-    focusSuccess_Bool = 0;
-end
+
+%And now we return the piezo to its default and move the Ti Z drive to
+%correct focus. We are now ready to repeat this for the next FOV.
+gui.setStagePosition(0);
+mmc.setFocusDevice('TIZDrive');
+move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange - 50;
+cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
+gui.setRelativeStagePosition(move_Distance);
+focusSuccess_Bool = 1;
 
 %% Troubleshooting section, comment out otherwise.
 % And here we snap a picture and montage it to ensure we have focused
