@@ -59,7 +59,7 @@ cprintf('red','Autofocus: Calculating optimal focus...');
 %To make sure we are actually focusing on something we set a threshold for
 %the normalized variance, just in case some fluorescent dust out of focus
 %triggers the autofocus routine.
-thresh = 0;
+thresh = 60;
 maxVal
 if maxVal > thresh
     %And now we return the piezo to its default and move the Ti Z drive to

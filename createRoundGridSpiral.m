@@ -1,4 +1,4 @@
-function [xPositions, yPositions] = createRoundGridSpiral()
+function [xPositions, yPositions, M] = createRoundGridSpiral()
 %% Petri Dish Scanning - this will create a raster scan pattern of a petri dish, simply give the function the center of the stage, the size of the petri dish, and how much trim you want at the edges
 %For conventions sake all coordinates are listed here in Cartesian
 %coordinates (X,Y) rather than Matlab coordinates (Y,X)
@@ -110,10 +110,15 @@ figure();plot(X,Y,'b.');title('Round Grid Creation');
 figure();plot(yPositions,xPositions,'b.');title('Spiral Scan Animation');
 hold on;
 plot(homeY,homeX,'go');
+vidObj = VideoWriter('GridScanAnimation.avi');
+vidObj.FrameRate = 15;
+open(vidObj);
 for i = 1:numel(xPositions)
     plot(yPositions(i),xPositions(i),'r*');
+    M(i) = getframe;
     pause(1/30);
 end
+writeVideo(vidObj,M);
 
     function [xPositions, yPositions,idx] = travelCurrentDirection(direction,numSteps,xPositions,yPositions,idx)
         numSteps = min(numSteps,size(X,1)-1);
