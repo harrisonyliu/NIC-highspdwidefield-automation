@@ -5,7 +5,7 @@
 %"TTL X=0" will turn off Z motion
 
 
-for i = 1
+
 core.setSerialPortCommand('COM1', 'MOVE X=-750', '\r');
 String answer = core.getSerialPortAnswer("Port", "\r");
 
