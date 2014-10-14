@@ -73,6 +73,7 @@ correction_Im_FL = correction_Im_FL ./ max(max(correction_Im_FL)); %Normalizatio
 % load('test_plate_raster_scan_positions.mat','xPositions','yPositions');
 load('50mm_plate_raster_scan_positions_spiral.mat');
 tot_Positions = numel(xPositions);
+ZOffset = zeros(1,numel(xPositions));
 worm_Ims = cell(0);
 worm_FOVNum = [];
 figure(1);status_Plot = tight_subplot(2,3,[.05 .01],[.01 .05],[.01 .01]);
@@ -96,17 +97,17 @@ for i = 1:3%numel(xPositions)
     cprintf('*red','Autofocusing...\n')
     %First we wish to see if there is a worm in the FOV that we can focus
     %on. We snap a fluorescence image and see if a worm exists.
-    mmc.setProperty('Zyla','Exposure',150);
-    mmc.setProperty('Core','Shutter','ESIOShutter');
+%     mmc.setProperty('Zyla','Exposure',150);
+%     mmc.setProperty('Core','Shutter','ESIOShutter');
     
     %In this section we take a quick snap to judge whether or not a worm
     %exists in the current FOV
-    mmc.snapImage();
-    w = mmc.getImageWidth();
-    h = mmc.getImageHeight();
-    snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
-    axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
-    title(['Scan Position ' num2str(i) ' Autofocus Snap']);
+%     mmc.snapImage();
+%     w = mmc.getImageWidth();
+%     h = mmc.getImageHeight();
+%     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
+%     axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
+%     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
     %We take the variance normalized by the median (background) to see if a
     %worm exists
     temp = double(reshape(snapIm,1,numel(snapIm)));
@@ -115,7 +116,7 @@ for i = 1:3%numel(xPositions)
     snapIm_Val = 70;
     if snapIm_Val > thresh
         %A worm exists so now we now autofocus
-        [normVar, focusSuccess_Bool] = autoFocus(mmc,gui,0.25,correction_Im);
+        [normVar, focusSuccess_Bool, ZOffset(i)] = autoFocus(mmc,gui,0.25,correction_Im);
         axes(status_Plot(3));plot(normVar,'b--');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
         %Tell the program to snap an image if a worm exists in the FOV AND
@@ -132,46 +133,46 @@ for i = 1:3%numel(xPositions)
     end
     
     %% Now snap a BF followed by a fluorescence image
-    if wormBool == 1
-        cprintf('*blue','Acquiring parallel images...\n')
-        imstack = acquireParallel(mmc,gui,drkfield,correction_Im,correction_Im_FL);
-        gui.closeAllAcquisitions();
-        
-        %Here are plots to show the latest captured image
-        axes(status_Plot(4));imagesc(imresize(imstack(:,:,1),0.25));colormap gray;
-        title(['Scan Position ' num2str(i) ' BF']);axis image;axis off;
-        axes(status_Plot(5));imagesc(imresize(imstack(:,:,2),0.25));colormap gray;
-        title(['Scan Position ' num2str(i) ' FL']);axis image;axis off;
-        
-        %Now show the worms that are extracted
-        cprintf('black','Analyzing images...\n');
-        [cropped, CC] = extractWorms(imstack(:,:,1),imstack(:,:,2),0.5);
-%         worm_Ims = [worm_Ims cropped];
-%         worm_FOVNum = [worm_FOVNum ones(1,numel(cropped))*i];
-        
-        %Here are plots to show the worms identified in the last image
-        labeled = labelmatrix(CC);
-        RGB_label = label2rgb(labeled,@jet,'k','shuffle');
-        axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
-        title(['Scan Position ' num2str(i) ' ID worms']);axis image;
-        
-        %Now we send the worm images to have their features extracted
-%         res = zeros(numel(cropped),5);
-%         for i = 1:numel(cropped)
-%             res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
-%         end
-%         res
-        
-        %And classify the worms based on the extracted features
-%         class = svmClassify(svmModel, res);
-        
-        %And finally we photoactivate the worms we wish to keep
-%         for i = 1:numel(class)
-%             if class(i) == 1
-%                 photoactivate()
-%             end
-%         end
-    end
+%     if wormBool == 1
+%         cprintf('*blue','Acquiring parallel images...\n')
+%         imstack = acquireParallel(mmc,gui,drkfield,correction_Im,correction_Im_FL);
+%         gui.closeAllAcquisitions();
+%         
+%         %Here are plots to show the latest captured image
+%         axes(status_Plot(4));imagesc(imresize(imstack(:,:,1),0.25));colormap gray;
+%         title(['Scan Position ' num2str(i) ' BF']);axis image;axis off;
+%         axes(status_Plot(5));imagesc(imresize(imstack(:,:,2),0.25));colormap gray;
+%         title(['Scan Position ' num2str(i) ' FL']);axis image;axis off;
+%         
+%         %Now show the worms that are extracted
+%         cprintf('black','Analyzing images...\n');
+%         [cropped, CC] = extractWorms(imstack(:,:,1),imstack(:,:,2),0.5);
+% %         worm_Ims = [worm_Ims cropped];
+% %         worm_FOVNum = [worm_FOVNum ones(1,numel(cropped))*i];
+%         
+%         %Here are plots to show the worms identified in the last image
+%         labeled = labelmatrix(CC);
+%         RGB_label = label2rgb(labeled,@jet,'k','shuffle');
+%         axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
+%         title(['Scan Position ' num2str(i) ' ID worms']);axis image;
+%         
+%         %Now we send the worm images to have their features extracted
+% %         res = zeros(numel(cropped),5);
+% %         for i = 1:numel(cropped)
+% %             res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
+% %         end
+% %         res
+%         
+%         %And classify the worms based on the extracted features
+% %         class = svmClassify(svmModel, res);
+%         
+%         %And finally we photoactivate the worms we wish to keep
+% %         for i = 1:numel(class)
+% %             if class(i) == 1
+% %                 photoactivate()
+% %             end
+% %         end
+%     end
     
     %         Once we have analyzed the worm images we no longer need them so we
     %         wipe the images from memory

@@ -1,4 +1,4 @@
-function [normVar, focusSuccess_Bool] = autoFocus(mmc,gui,scale,correction_Im)
+function [normVar, focusSuccess_Bool, ZOffset] = autoFocus(mmc,gui,scale,correction_Im)
 % Autofocusing script. Pass it the micromanager core object and the gui
 % object and this function will automatically take a 150um z-stack around
 % the current plane of focus (75um below, 75um above, 10um steps) using the
@@ -65,6 +65,8 @@ move_Distance = (optimalFocus-1) * autoFocusStepSize - autoFocusHalfRange - 50;
 cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
 gui.setRelativeStagePosition(move_Distance);
 focusSuccess_Bool = 1;
+ZOffset = move_Distance;
+axes(status_Plot(4));imagesc(imresize(imstack(:,:,optimalFocus),0.25));colormap gray;axis image;axis off;
 
 %% Troubleshooting section, comment out otherwise.
 % And here we snap a picture and montage it to ensure we have focused
