@@ -1,1 +1,0 @@
-2014-08-22T10:24:11.623955 tid3908 [IFO,LogManager] Enabled primary log file C:\Users\nicuser\Documents\MATLAB\CoreLogs\CoreLog20140822T102411_pid5772.txt
