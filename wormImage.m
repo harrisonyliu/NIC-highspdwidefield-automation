@@ -81,7 +81,7 @@ set(figure(1),'WindowStyle','docked');
 
 %% BEGINNING OF SCREENING
 %Begin by moving to a new position and running through the script
-for i = 1:3%numel(xPositions)
+for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
     disp(['Moving to position ' num2str(i) ' of ' num2str(tot_Positions)])
     gui.setXYStagePosition(xPositions(i),yPositions(i));
@@ -110,13 +110,13 @@ for i = 1:3%numel(xPositions)
 %     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
     %We take the variance normalized by the median (background) to see if a
     %worm exists
-    temp = double(reshape(snapIm,1,numel(snapIm)));
-    snapIm_Val = var(temp) / median(temp);
+%     temp = double(reshape(snapIm,1,numel(snapIm)));
+%     snapIm_Val = var(temp) / median(temp);
     thresh = 60;
     snapIm_Val = 70;
     if snapIm_Val > thresh
         %A worm exists so now we now autofocus
-        [normVar, focusSuccess_Bool, ZOffset(i)] = autoFocus(mmc,gui,0.25,correction_Im);
+        [normVar, focusSuccess_Bool, ZOffset(i)] = autoFocus(mmc,gui,0.5,correction_Im);
         axes(status_Plot(3));plot(normVar,'b--');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
         %Tell the program to snap an image if a worm exists in the FOV AND

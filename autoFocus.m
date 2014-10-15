@@ -66,7 +66,8 @@ cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position t
 gui.setRelativeStagePosition(move_Distance);
 focusSuccess_Bool = 1;
 ZOffset = move_Distance;
-axes(status_Plot(4));imagesc(imresize(imstack(:,:,optimalFocus),0.25));colormap gray;axis image;axis off;
+figure(2);imagesc(imresize(imstack(:,:,optimalFocus),0.25));colormap gray;axis image;axis off;
+gui.closeAllAcquisitions();
 
 %% Troubleshooting section, comment out otherwise.
 % And here we snap a picture and montage it to ensure we have focused

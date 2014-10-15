@@ -34,6 +34,8 @@ cprintf('*red','Starting image acquisition...\n')
 mmc.startSequenceAcquisition(nImages, 0, false);
 counter = 1;
 while (mmc.isSequenceRunning() || mmc.getRemainingImageCount() > 0)
+    disp('images remaining')
+    mmc.getRemainingImageCount()
     if (mmc.getRemainingImageCount() > 0)
         sArr(counter) = var(single(mmc.popNextImage()));
         imArr(:,:,counter) = reshape(mmc.popNextImage(),height,width);
