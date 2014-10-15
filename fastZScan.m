@@ -9,17 +9,17 @@
 nImages = 16;
 cprintf('black','Setting stage to triggerable...\n')
 mmc.setSerialPortCommand('COM1', 'TTL X=1', '\r');
-% answer = mmc.getSerialPortAnswer('COM1', '\r')
+answer = mmc.getSerialPortAnswer('COM1', '\n')
 cprintf('black','Telling stage to move in Z...\n')
 mmc.setSerialPortCommand('COM1', 'RM Y=4 Z=0', '\r');
-% answer = mmc.getSerialPortAnswer('COM1', '\r')
+% answer = mmc.getSerialPortAnswer('COM1', '\n')
 cprintf('*black','Programming piezo stage...\n')
 for i = 1:nImages
     currentZ = -850 + 100*i;
     command = ['LD Z=' num2str(currentZ)];
     cprintf('blue',['Programming Z = ' num2str(currentZ) '...\n'])
     mmc.setSerialPortCommand('COM1', command, '\r');
-    %     answer = mmc.getSerialPortAnswer('COM1', '\r')
+    %     answer = mmc.getSerialPortAnswer('COM1', '\n')
 end
 cprintf('*black','Done!\n')
 
