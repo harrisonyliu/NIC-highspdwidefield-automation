@@ -120,22 +120,6 @@ for i = 1:2:numel(xPositions)
 end
 % writeVideo(vidObj,M);
 
-%% Create interpolated grid from plate mapping data
-%Assume that the recorded z-positions are in an array called fastPlateZ
-%which is approximately half the size of xPositions
-interpolatedZ = nan(size(xPositions));
-interpolatedZ(1:2:end) = fastPlateZ;
-trimmedX = xPositions(1:2:end);
-trimmedY = yPositions(1:2:end);
-
-for i = 1:numel(interpolatedZ)
-    if isnan(interpolatedZ(i)) == 1
-        deltaX = xPositions(i) - trimmedX;
-        deltaY = yPositions(i) - trimmedY;
-        distanceArr = sqrt(deltaX.^2 + deltaY.^2);
-        interpolatedZ(i) = sum((1./distanceArr) .* fastPlateZ) / sum(distanceArr);
-    end
-end
 
 %% Functions used to create grid
 

@@ -4,10 +4,6 @@
 %Then 'TTL X=1' will cause Z to move on every camera frame
 %'TTL X=0' will turn off Z motion
 
-%Here's how to call!
-mmc.setSerialPortCommand('COM1', 'W X', char(13));
-asiReturn = mmc.getSerialPortAnswer('COM1', char(10))
-
 
 %% Programming stage positions and behavior
 mmc.setProperty('Zyla','Exposure',15);
@@ -42,7 +38,7 @@ counter = 1;
 while (mmc.isSequenceRunning() || mmc.getRemainingImageCount() > 0)
     if (mmc.getRemainingImageCount() > 0)
         im_temp = typecast((mmc.popNextImage()), 'uint16');
-        sArr(counter) = var(single(im_temp));
+        sArr(counter) = var(im_temp);
         imArr(:,:,counter) = reshape(im_temp,height,width);
         %         img = mmc.popNextImage();
         counter = counter + 1;
