@@ -78,10 +78,12 @@ worm_Ims = cell(0);
 worm_FOVNum = [];
 figure(1);status_Plot = tight_subplot(2,3,[.05 .01],[.01 .05],[.01 .01]);
 set(figure(1),'WindowStyle','docked');
+screenTime = zeros(numel(xPositions));
 
 %% BEGINNING OF SCREENING
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
+    tic
     %Loop through each of the image positions, focus, and snap an image
     disp(['Moving to position ' num2str(i) ' of ' num2str(tot_Positions)])
     gui.setXYStagePosition(xPositions(i),yPositions(i));
@@ -131,6 +133,7 @@ for i = 1:numel(xPositions)
         cprintf('*red','Autofocus: No worms detected, moving to next FOV\n')
         wormBool = 0;
     end
+    screenTime(i) = toc;
     
     %% Now snap a BF followed by a fluorescence image
 %     if wormBool == 1

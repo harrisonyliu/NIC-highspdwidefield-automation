@@ -2149,3 +2149,246 @@
 2014-10-14T17:29:41.782442 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
 2014-10-14T17:29:42.282442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
 2014-10-14T17:29:42.286442 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:42.786442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:42.789442 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:43.289442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:43.293442 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:43.793842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:43.796842 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:44.315042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:44.317042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:44.817042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:44.821042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:45.321042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:45.325042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:45.825042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:45.829042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:46.329042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:46.333042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:46.833042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:46.836042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:47.336042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:47.340042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:47.840042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:47.843042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:48.343042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:48.347042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:48.847042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:48.851042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:49.351042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:49.355042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:49.855042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:49.858042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:50.358042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:50.362042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:50.862042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:50.866042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:51.366042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:51.370042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:51.870042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:51.874042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:52.374042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:52.378042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:52.878042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:52.881042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:53.381042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:53.385042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:53.885042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:53.888042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:54.388042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:54.392042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:54.892042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:54.896042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:55.396042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:55.400042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:55.900042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:55.903042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:56.403042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:56.407042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:56.907042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:56.911042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:57.447442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:57.478642 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:57.993442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:58.024642 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:58.495642 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:58.499642 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:59.038042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:59.069242 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:29:59.584042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:29:59.615242 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:00.130042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:00.161242 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:00.676042 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:00.707242 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:01.178842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:01.182842 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:01.682842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:01.686842 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:02.187442 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:02.190442 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:02.733842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:02.765042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:03.279842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:03.311042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:03.716642 tid5728 [dbg,App] stop requested!
+2014-10-14T17:30:03.779042 tid5728 [dbg,App] 
+                                   [       ] {:finished true,
+                                   [       ] :display nil,
+                                   [       ] :position-list nil,
+                                   [       ] :init-system-state
+                                   [       ] {["TIFilterBlock2" "State"] "0",
+                                   [       ] ["ESIOSwitch" "TTL3"] "0",
+                                   [       ] ["XYStage" "Description"] "ASI XY stage driver adapter",
+                                   [       ] ["Core" "AutoShutter"] "1",
+                                   [       ] ["TIScope" "DeviceAddress"] "USB_DEVICE(1)",
+                                   [       ] ["Spectra" "Cyan_Level"] "100",
+                                   [       ] ["TIFilterBlock1" "State"] "5",
+                                   [       ] ["Spectra" "Blue_Enable"] "0",
+                                   [       ] ["ESIOSwitch" "TTL4"] "0",
+                                   [       ] ["COM5" "Handshaking"] "Off",
+                                   [       ] ["Zyla" "FanSpeed"] "On",
+                                   [       ] ["Zyla" "SpuriousNoiseFilter"] "On",
+                                   [       ] ["COM1" "DataBits"] "8",
+                                   [       ] ["Zyla" "ElectronicShutteringMode"] "Rolling",
+                                   [       ] ["ScopeLED" "Intensity4500K"] "0.0000",
+                                   [       ] ["Spectra" "Green_Level"] "100",
+                                   [       ] ["ScopeLED" "Version"] "33554432",
+                                   [       ] ["ESIOSwitch" "TTL5"] "0",
+                                   [       ] ["XYStage" "JoyStick Reverse"] "Off",
+                                   [       ] ["Spectra" "YG_Filter"] "0",
+                                   [       ] ...},
+                                   [       ] :init-z-position 0.0,
+                                   [       ] :last-wake-time 85814161,
+                                   [       ] :reference-z 0.0,
+                                   [       ] :init-continuous-focus false,
+                                   [       ] :init-shutter-state false,
+                                   [       ] :shutter-states {"ScopeLED" false},
+                                   [       ] :acq-thread
+                                   [       ] #<Thread Thread[AcquisitionEngine2010 Thread (Clojure),5,]>,
+                                   [       ] :burst-time-offset -4.6662292660204E11,
+                                   [       ] :default-xy-stage "XYStage",
+                                   [       ] :start-time 85813752,
+                                   [       ] :init-auto-shutter true,
+                                   [       ] :default-z-drive "ZStage",
+                                   [       ] :bit-depth 16,
+                                   [       ] :cameras {"Zyla" {:exposure 15.0}},
+                                   [       ] :stop true,
+                                   [       ] :live-mode-on false,
+                                   [       ] ...}
+2014-10-14T17:30:03.779042 tid5728 [IFO,Core] Default autofocus set to TIPFSStatus
+2014-10-14T17:30:03.794642 tid5728 [dbg,App] stop requested!
+2014-10-14T17:30:03.825842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:03.857042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:03.857042 tid5728 [dbg,App] 
+                                   [       ] {:finished true,
+                                   [       ] :display nil,
+                                   [       ] :position-list nil,
+                                   [       ] :init-system-state
+                                   [       ] {["TIFilterBlock2" "State"] "0",
+                                   [       ] ["ESIOSwitch" "TTL3"] "0",
+                                   [       ] ["XYStage" "Description"] "ASI XY stage driver adapter",
+                                   [       ] ["Core" "AutoShutter"] "1",
+                                   [       ] ["TIScope" "DeviceAddress"] "USB_DEVICE(1)",
+                                   [       ] ["Spectra" "Cyan_Level"] "100",
+                                   [       ] ["TIFilterBlock1" "State"] "5",
+                                   [       ] ["Spectra" "Blue_Enable"] "0",
+                                   [       ] ["ESIOSwitch" "TTL4"] "0",
+                                   [       ] ["COM5" "Handshaking"] "Off",
+                                   [       ] ["Zyla" "FanSpeed"] "On",
+                                   [       ] ["Zyla" "SpuriousNoiseFilter"] "On",
+                                   [       ] ["COM1" "DataBits"] "8",
+                                   [       ] ["Zyla" "ElectronicShutteringMode"] "Rolling",
+                                   [       ] ["ScopeLED" "Intensity4500K"] "0.0000",
+                                   [       ] ["Spectra" "Green_Level"] "100",
+                                   [       ] ["ScopeLED" "Version"] "33554432",
+                                   [       ] ["ESIOSwitch" "TTL5"] "0",
+                                   [       ] ["XYStage" "JoyStick Reverse"] "Off",
+                                   [       ] ["Spectra" "YG_Filter"] "0",
+                                   [       ] ...},
+                                   [       ] :init-z-position 0.0,
+                                   [       ] :last-wake-time 85814161,
+                                   [       ] :reference-z 0.0,
+                                   [       ] :init-continuous-focus false,
+                                   [       ] :init-shutter-state false,
+                                   [       ] :shutter-states {"ScopeLED" false},
+                                   [       ] :acq-thread
+                                   [       ] #<Thread Thread[AcquisitionEngine2010 Thread (Clojure),5,]>,
+                                   [       ] :burst-time-offset -4.6662292660204E11,
+                                   [       ] :default-xy-stage "XYStage",
+                                   [       ] :start-time 85813752,
+                                   [       ] :init-auto-shutter true,
+                                   [       ] :default-z-drive "ZStage",
+                                   [       ] :bit-depth 16,
+                                   [       ] :cameras {"Zyla" {:exposure 15.0}},
+                                   [       ] :stop true,
+                                   [       ] :live-mode-on false,
+                                   [       ] ...}
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device COM3...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device COM3
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device COM7...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device COM7
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device COM8...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device COM8
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device COM1...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device COM1
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device COM5...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device COM5
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device Arduino-Hub...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device Arduino-Hub
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TubeLens...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TubeLens
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device Zyla...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device Zyla
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIScope...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIScope
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TINosePiece...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TINosePiece
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIFilterBlock1...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIFilterBlock1
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIFilterBlock2...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIFilterBlock2
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIZDrive...
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] Waiting for all peripherals with a timeout of 1 ms
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] 0 peripheral(s) are still busy
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIZDrive
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIPFSOffset...
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] Waiting for all peripherals with a timeout of 1 ms
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] 0 peripheral(s) are still busy
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIPFSOffset
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TIPFSStatus...
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] Waiting for all peripherals with a timeout of 1 ms
+2014-10-14T17:30:03.857042 tid1956 [dbg,dev:TIScope] 0 peripheral(s) are still busy
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TIPFSStatus
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device TILightPath...
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Finished waiting for device TILightPath
+2014-10-14T17:30:03.857042 tid5728 [dbg,Core] Waiting for device XYStage...
+2014-10-14T17:30:03.857042 tid5728 [dbg,dev:COM1] SetCommand -> /\r
+2014-10-14T17:30:03.888242 tid5728 [dbg,dev:COM1] GetAnswer # retries = 3
+2014-10-14T17:30:03.888242 tid5728 [dbg,dev:COM1] GetAnswer <- N\r\n
+2014-10-14T17:30:03.888242 tid5728 [dbg,Core] Finished waiting for device XYStage
+2014-10-14T17:30:03.888242 tid5728 [dbg,Core] Waiting for device ZStage...
+2014-10-14T17:30:03.888242 tid5728 [dbg,dev:COM1] SetCommand -> /\r
+2014-10-14T17:30:03.950642 tid5728 [dbg,dev:COM1] GetAnswer # retries = 5
+2014-10-14T17:30:03.950642 tid5728 [dbg,dev:COM1] GetAnswer <- N\r\n
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device ZStage
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device Spectra...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device Spectra
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device Wheel-A...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device Wheel-A
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device ESioController...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device ESioController
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device ESIOSwitch...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device ESIOSwitch
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device ESIOShutter...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device ESIOShutter
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Waiting for device ScopeLED...
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Finished waiting for device ScopeLED
+2014-10-14T17:30:03.950642 tid5728 [dbg,Core] Will unload all devices
+2014-10-14T17:30:04.371842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:04.403042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:04.917842 tid5860 [dbg,dev:COM5] Write -> (hex) 28
+2014-10-14T17:30:04.949042 tid5860 [dbg,dev:COM5] Read <- (hex) 28 3e
+2014-10-14T17:30:06.555842 tid5728 [IFO,Core] Did unload all devices
+2014-10-14T17:30:06.555842 tid5728 [IFO,Core] System reset
+2014-10-14T17:30:07.211042 tid5728 [IFO,Core] Core session ended
