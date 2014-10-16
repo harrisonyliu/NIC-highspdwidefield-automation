@@ -82,25 +82,13 @@ Y = Y + homeY;
 
 %Find the total number of positions to scan through
 numFOVs = numel(X) - sum(sum(isnan(X)));
-
 Z = nan(size(X));
 centerX = round(size(X,2)/2);
 centerY = round(size(Y,1)/2);
-% figure();hold on;
-% [testX, testY] = meshgrid([4:12],[4:12]);
-% plot(testX,testY,'b.');
-testMap = nan(size(X));
-distanceArr = distanceArr./max(distanceArr);
+
 
 for i = 1:numel(distanceArr)
     xCoord = find(X(centerX,:) == trimmedX(i));
     yCoord = find(Y(:,centerY) == trimmedY(i));
-    testMap(yCoord,xCoord) = distanceArr(i);
-    if i == ROI
-        ROIx = xCoord;
-        ROIy = yCoord;
-    end
-%     plot(yCoord,xCoord,'r*');
+    plot(
 end
-
-HeatMap(testMap);hold on;plot(ROIy,ROIx,'bo');
