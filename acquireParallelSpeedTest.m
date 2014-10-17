@@ -1,18 +1,15 @@
-function imstack = acquireParallel(mmc,gui,drkfield,correction_Im,correction_Im_FL)
-%This function will take a full resolution image of the current FOV. It
-%will take one BF and one fluorescence image and save the images.
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
+mmc.set
 
 %Acquire the image and save it to a file
-cprintf('blue','Imaging: Acquiring images...');
+cprintf('blue','Imaging: Acquiring images by loading acquisition');
+tic
 gui.loadAcquisition('C:\Users\nicuser\Desktop\cy3-BF-Acq-Parallel');
 acqName = gui.runAcquisition();
-cprintf('blue','Images acquired, reading into Matlab...\n');
 imgCache = gui.getAcquisitionImageCache(acqName);
 numSlices = gui.getAcquisitionSettings.channels.size;
 imstack = zeros(w,h,numSlices);
-gui.closeAllAcquisitions();
 
 % Retrieve a "tagged image" from the cache:
 for i = 0:numSlices-1
@@ -29,6 +26,23 @@ for i = 0:numSlices-1
     img = reshape(img, [w, h]); % image should be interpreted as a 2D array
     imstack(:,:,i+1) = transpose(double(img));  % make column-major order for MATLAB
 end
+toc
 
-imstack(:,:,1) = (imstack(:,:,1) - drkfield) ./ correction_Im;
-imstack(:,:,2) = (imstack(:,:,2) - drkfield) ./ correction_Im_FL;
+cprintf('red','Imaging: Acquiring images by direct Matlab control');
+tic
+%Take a brightfield image
+mmc.setShutterDevice('ScopeLED');
+mmc.setExposure(15);
+mmc.snapImage();
+BF_temp = mmc.getImage();
+
+%Take a fluorescence image
+mmc.setShutterDevice('ESIOShutter');
+mmc.setExposure(100);
+mmc.snapImage();
+FL_temp = mmc.getImage();
+
+BF = reshape(typecast(BF_temp ,'uint16'),w,h)';
+FL = reshape(typecast(FL_temp ,'uint16'),w,h)';
+toc
+figure();imshowpair(BF,FL,'montage');colormap gray;axis image;axis off;

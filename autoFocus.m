@@ -1,4 +1,4 @@
-function [normVar, focusSuccess_Bool, ZOffset] = autoFocus(mmc,gui,scale,correction_Im)
+function [normVar, ZOffset] = autoFocus(mmc,gui)
 % Autofocusing script. Pass it the micromanager core object and the gui
 % object and this function will automatically take a 150um z-stack around
 % the current plane of focus (75um below, 75um above, 10um steps) using the
@@ -70,10 +70,9 @@ maxObserved = max(normVar);
 mmc.setFocusDevice('TIZDrive');
 overallMax = find(normVar == maxObserved);
 % plot(overallMax,maxObserved,'r*');hold off;
-move_Distance = (overallMax+1) * autoFocusStepSize - autoFocusHalfRange
+move_Distance = (overallMax+1) * autoFocusStepSize - autoFocusHalfRange;
 cprintf('red',['Moving ' num2str(move_Distance) ' relative to current position to focus\n'])
 gui.setRelativeStagePosition(move_Distance);
-focusSuccess_Bool = 1;
 ZOffset = move_Distance;
 
 % mmc.snapImage();
