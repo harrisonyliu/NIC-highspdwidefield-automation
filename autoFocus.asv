@@ -1,4 +1,4 @@
-function [normVar, focusSuccess_Bool, ZOffset, maxX, maxY, p] = autoFocus(mmc,gui,scale,correction_Im)
+function [normVar, focusSuccess_Bool, ZOffset] = autoFocus(mmc,gui,scale,correction_Im)
 % Autofocusing script. Pass it the micromanager core object and the gui
 % object and this function will automatically take a 150um z-stack around
 % the current plane of focus (75um below, 75um above, 10um steps) using the
@@ -57,7 +57,7 @@ end
 
 %Now we pass the stack to find the optimal focus
 cprintf('red','Autofocus: Calculating optimal focus...');
-[optimalFocus, maxVal, maxX, maxY] = getFocus();
+[optimalFocus, maxVal] = getFocus();
 
 %And now we return the piezo to its default and move the Ti Z drive to
 %correct focus. We are now ready to repeat this for the next FOV.
@@ -86,12 +86,9 @@ gui.closeAllAcquisitions();
 % figure();imshowpair(imstack(:,:,1),imstack(:,:,optimalFocus),'montage');
 % title(['First image in focal stack                                                Focused Image (Image ' ...
 %     num2str(optimalFocus) ' of ' num2str(size(imstack,3)) ')']);
-% figure();plot(f,1:nImages,sArr,'b.');hold on;
-% plot([maxX maxX],[min(sArr) max(sArr)],'r-');
-% title(['Focus curve fitting n = ' num2str(nImages)]);
 
 %% Get focus function
-    function [frameNum, maxVal, maxX, maxY, p] = getFocus()
+    function [frameNum, maxVal] = getFocus()
         % This function receives an x by y by n image stack and will return the
         % frame number with the best focus as determined by the highest normalized variance
         %         imLinearElements = numel(imstack(:,:,1));
@@ -114,7 +111,10 @@ gui.closeAllAcquisitions();
         p = polyfit([1:nImages],sArr,2);
         %Now find the max of the function
         maxX = -p(2)/(2*p(1));
-        maxY = p(1) * maxX^2 + p(2) * maxX + p(3);
+        maxY = 
+        figure();plot(f,1:nImages,sArr,'b.');hold on;
+        plot([maxX maxX],[min(sArr) max(sArr)],'r-');
+        title(['Focus curve fitting n = ' num2str(nImages)]);
     end
 
 end

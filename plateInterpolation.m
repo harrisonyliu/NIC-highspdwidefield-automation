@@ -1,25 +1,5 @@
 %Radial average from each point
 
-%% Create interpolated grid from plate mapping data
-%Assume that the recorded z-positions are in an array called fastPlateZ
-%which is approximately half the size of xPositions
-interpolatedZ = nan(size(xPositions));
-fastPlateZ = ZOffset(1:2:end);
-interpolatedZ(1:2:end) = fastPlateZ;
-trimmedX = xPositions(1:2:end);
-trimmedY = yPositions(1:2:end);
-
-for i = 1:numel(interpolatedZ)
-    if isnan(interpolatedZ(i)) == 1
-        deltaX = xPositions(i) - trimmedX;
-        deltaY = yPositions(i) - trimmedY;
-        distanceArr = 1./sqrt(deltaX.^2 + deltaY.^2);
-        interpolatedZ(i) = sum((distanceArr) .* fastPlateZ') / sum(distanceArr);
-    end
-end
-
-%% Creating heat maps for verification and debugging
-
 %% Input parameters
 %Center of the dish at location [-12500, 8500] (units are in um)
 homeX = 9800;
@@ -82,6 +62,28 @@ Y = Y + homeY;
 
 %Find the total number of positions to scan through
 numFOVs = numel(X) - sum(sum(isnan(X)));
+load('Zpositions50mmplate.mat');
+[xPositions, yPositions, M] = createRoundGridSpiral();
+
+%% Creating heat maps for verification and debugging
+
+%% Create interpolated grid from plate mapping data
+%Assume that the recorded z-positions are in an array called fastPlateZ
+%which is approximately half the size of xPositions
+interpolatedZ = nan(size(xPositions));
+fastPlateZ = ZOffset(1:2:end);
+interpolatedZ(1:2:end) = fastPlateZ;
+trimmedX = xPositions(1:2:end);
+trimmedY = yPositions(1:2:end);
+
+for i = 1:numel(interpolatedZ)
+    if isnan(interpolatedZ(i)) == 1
+        deltaX = xPositions(i) - trimmedX;
+        deltaY = yPositions(i) - trimmedY;
+        distanceArr = 1./(deltaX.^2 + deltaY.^2);
+        interpolatedZ(i) = sum((distanceArr) .* fastPlateZ') / sum(distanceArr);
+    end
+end
 
 Z = nan(size(X));
 centerX = round(size(X,2)/2);
@@ -91,6 +93,7 @@ centerY = round(size(Y,1)/2);
 % plot(testX,testY,'b.');
 testMap = nan(size(X));
 distanceArr = distanceArr./max(distanceArr);
+ROI = 1;
 
 for i = 1:numel(distanceArr)
     xCoord = find(X(centerX,:) == trimmedX(i));
@@ -103,4 +106,4 @@ for i = 1:numel(distanceArr)
 %     plot(yCoord,xCoord,'r*');
 end
 
-HeatMap(testMap);hold on;plot(ROIy,ROIx,'bo');
+% hmo = HeatMap(testMap);plot(hmo);hold on;plot(ROIy,ROIx,'bo')

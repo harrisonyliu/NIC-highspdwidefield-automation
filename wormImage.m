@@ -118,8 +118,11 @@ for i = 1:numel(xPositions)
     snapIm_Val = 70;
     if snapIm_Val > thresh
         %A worm exists so now we now autofocus
-        [normVar, focusSuccess_Bool, ZOffset(i)] = autoFocus(mmc,gui,0.5,correction_Im);
-        axes(status_Plot(3));plot(normVar,'b--');
+        [normVar, focusSuccess_Bool, ZOffset(i), maxX, maxY, p] = ...
+            autoFocus(mmc,gui,0.5,correction_Im);
+        axes(status_Plot(3));plot(normVar,'b.');hold on;
+        x = 1:numel(normVar);y = p(1) * x.^2 + p(2) * x + p(3);
+        plot(y,'r-');plot(maxX,maxY,'r*');hold off;
         title(['Scan Position ' num2str(i) ' Focus Curve']);
         %Tell the program to snap an image if a worm exists in the FOV AND
         %the autofocus algorithm was successful.

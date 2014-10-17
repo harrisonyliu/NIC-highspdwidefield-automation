@@ -14,12 +14,14 @@ cprintf('black','Telling stage to move in Z...\n')
 mmc.setSerialPortCommand('COM1', 'RM Y=4 Z=0', char(13));
 answer = mmc.getSerialPortAnswer('COM1', char(10))
 cprintf('*black','Programming piezo stage...\n')
+
+%Now we tell the stage what z-positions to visit
 for i = 1:nImages
     currentZ = -850 + 100*i;
     command = ['LD Z=' num2str(currentZ)];
     cprintf('blue',['Programming Z = ' num2str(currentZ) '...\n'])
     mmc.setSerialPortCommand('COM1', command, char(13))
-        answer = mmc.getSerialPortAnswer('COM1', char(10))
+    answer = mmc.getSerialPortAnswer('COM1', char(10))
 end
 cprintf('*black','Done!\n')
 
@@ -34,12 +36,10 @@ cprintf('*red','Starting image acquisition...\n')
 mmc.startSequenceAcquisition(nImages, 0, false);
 counter = 1;
 while (mmc.isSequenceRunning() || mmc.getRemainingImageCount() > 0)
-    disp('images remaining')
-    mmc.getRemainingImageCount()
     if (mmc.getRemainingImageCount() > 0)
-        sArr(counter) = var(single(mmc.popNextImage()));
-        imArr(:,:,counter) = reshape(mmc.popNextImage(),height,width);
-        %         img = mmc.popNextImage();
+        temp_Im = typecast(mmc.popNextImage(),'uint16');
+        sArr(counter) = var(temp_Im) / mean(temp_Im)
+        imArr(:,:,counter) = reshape(temp_Im,height,width);
         counter = counter + 1;
     end
 end
@@ -55,9 +55,9 @@ end
 
 %Now try to find the position of best focus by fitting a curve and
 %calculating the position of the maximum.
-f = fit([1:nImages]',sArr','poly2');
+p = polyfit([1:nImages],sArr,2);
 %Now find the max of the function
-maxX = -f.p2 - 2*f.p1;
+maxX = -p(2)/(2*p(1));
 figure();plot(f,1:nImages,sArr,'b.');hold on;
 plot([maxX maxX],[min(sArr) max(sArr)],'r-');
 title(['Focus curve fitting n = ' num2str(nImages)]);
