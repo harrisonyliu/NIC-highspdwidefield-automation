@@ -78,10 +78,11 @@ worm_Ims = cell(0);
 worm_FOVNum = [];
 figure(1);status_Plot = tight_subplot(2,3,[.05 .01],[.01 .05],[.01 .01]);
 set(figure(1),'WindowStyle','docked');
-screenTime = zeros(numel(xPositions));
+screenTime = zeros(1,numel(xPositions));
 
 %% BEGINNING OF SCREENING
 %Begin by moving to a new position and running through the script
+tic
 for i = 1:numel(xPositions)
     tic
     %Loop through each of the image positions, focus, and snap an image
@@ -118,11 +119,9 @@ for i = 1:numel(xPositions)
     snapIm_Val = 70;
     if snapIm_Val > thresh
         %A worm exists so now we now autofocus
-        [normVar, focusSuccess_Bool, ZOffset(i), maxX, maxY, p] = ...
+        [normVar, focusSuccess_Bool, ZOffset(i)] = ...
             autoFocus(mmc,gui,0.5,correction_Im);
-        axes(status_Plot(3));plot(normVar,'b.');hold on;
-        x = 1:numel(normVar);y = p(1) * x.^2 + p(2) * x + p(3);
-        plot(y,'r-');plot(maxX,maxY,'r*');hold off;
+        axes(status_Plot(3));plot(normVar,'b.');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
         %Tell the program to snap an image if a worm exists in the FOV AND
         %the autofocus algorithm was successful.
@@ -136,6 +135,11 @@ for i = 1:numel(xPositions)
         cprintf('*red','Autofocus: No worms detected, moving to next FOV\n')
         wormBool = 0;
     end
+    w = mmc.getImageWidth();
+    h = mmc.getImageHeight();
+    snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
+    axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
+    title(['Scan Position ' num2str(i) ' Autofocus Snap']);
     screenTime(i) = toc;
     
     %% Now snap a BF followed by a fluorescence image
@@ -185,7 +189,7 @@ for i = 1:numel(xPositions)
 %     worm_Ims = cell(0);
 %     worm_FOVNum = [];
 end
-
+toc
 % for i = 1:numel(worm_Ims)
 %     figure();imagesc(worm_Ims{i});colormap gray;
 %     title(['Worm ' num2str(i) ' in FOV number ' num2str(worm_FOVNum(i))]);
