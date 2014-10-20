@@ -16,6 +16,7 @@ autoFocusHalfRange = 75; %E.g. autofocus will scan 75um above and below the curr
 %Need to move up a little at first to get an optimized focus curve (BF
 %autofocus tends to be about 50um higher than the fluorescence autofocus,
 %we use BF to focus since it is about an order of magnitude faster)
+% gui.setRelativeStagePosition(50);
 %Here we prepare the autofocus image acquisition parameters.
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
@@ -57,6 +58,16 @@ y = p(1)*[1:nImages].^3 + p(2)*[1:nImages].^2 + p(3) * [1:nImages] + p(4);
 figure();plot(1:nImages,normVar,'b.');hold on;
 plot(1:nImages,y);
 title(['Focus curve fitting n = ' num2str(nImages)]);
+% 
+% %Determine if the fit or the observed maxima should be the one the stage
+% %moves to.
+% if maxObserved > maxY(maxIdx)
+%     overallMax = find(normVar == maxObserved);
+%     plot(overallMax,maxObserved,'r*');hold off;
+% else
+%     overallMax = maxX;
+%     plot(maxX, maxY(maxIdx),'r*');hold off;
+% end
 
 %And now we return the piezo to its default and move the Ti Z drive to
 %correct focus. We are now ready to repeat this for the next FOV.
@@ -72,9 +83,10 @@ mmc.snapImage();
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 snapIm = reshape(typecast(mmc.getImage() ,'uint16'),w,h)';
-figure();imagesc(snapIm);colormap gray;axis image;axis off;
+figure(2);imagesc(snapIm);colormap gray;axis image;axis off;
 
 %% Troubleshooting section, comment out otherwise.
+
 % figure();plot(f,1:nImages,sArr,'b.');hold on;
 % plot([maxX maxX],[min(sArr) max(sArr)],'r-');
 % title(['Focus curve fitting n = ' num2str(nImages)]);

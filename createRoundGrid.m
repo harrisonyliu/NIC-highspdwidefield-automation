@@ -87,13 +87,14 @@ for i = 2:numel(nonEmpty)
     idx = idx + numel(X_columns{nonEmpty(i)});
 end
 
-save('50mm_plate_raster_scan_positions_fixed.mat','xPositions','yPositions');
+save('50mm_plate_raster_scan_positions_10x.mat','xPositions','yPositions');
 
 %% Debugging section, comment out otherwise
 figure();plot(X,Y,'b.');title('Round Grid Creation');
 figure();plot(yPositions,xPositions,'b.');title('Raster Scan Animation');
 hold on;
 plot(homeY,homeX,'go');
+title(['Raster Plate Scan: ' num2str(numFOVs) ' FOVs']);
 for i = 1:numel(xPositions)
     plot(yPositions(i),xPositions(i),'r*');
     pause(1/30);

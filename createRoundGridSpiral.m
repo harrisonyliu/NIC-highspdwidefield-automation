@@ -1,4 +1,4 @@
-function [xPositions, yPositions, M] = createRoundGridSpiral()
+function [xPositions, yPositions, M] = createRoundGridSpiral(mmc)
 %% Petri Dish Scanning - this will create a raster scan pattern of a petri dish, simply give the function the center of the stage, the size of the petri dish, and how much trim you want at the edges
 %For conventions sake all coordinates are listed here in Cartesian
 %coordinates (X,Y) rather than Matlab coordinates (Y,X)
@@ -19,8 +19,8 @@ petriDiam = 50000;
 trim_amount = 2;
 
 %% Now to create the raster scan pattern, we assume home is at (0,0) for now
-% pixSize = mmc.getPixelSizeUm();
-pixSize = 1.6125;
+pixSize = mmc.getPixelSizeUm();
+% pixSize = 1.6125;
 fovW = pixSize * w;
 fovH = pixSize * h;
 %Find out how many fields of view in the x direction
@@ -103,17 +103,18 @@ while endcondition < 2;
 end
 xPositions(find(isnan(xPositions) == 1)) = [];
 yPositions(find(isnan(yPositions) == 1)) = [];
-% save('50mm_plate_raster_scan_positions_spiral.mat','xPositions','yPositions');
+save('50mm_plate_raster_scan_positions_10x_spiral.mat','xPositions','yPositions');
 
 %% Debugging section, comment out otherwise
 % figure();plot(X,Y,'b.');title('Round Grid Creation');
 figure();plot(yPositions,xPositions,'b.');title('Spiral Scan Animation');
 hold on;
 plot(homeY,homeX,'go');
+title(['Spiral Plate Scan: ' num2str(numFOVs) ' FOVs']);
 vidObj = VideoWriter('GridScanAnimation.avi');
 vidObj.FrameRate = 15;
 open(vidObj);
-for i = 1:2:numel(xPositions)
+for i = 1:numel(xPositions)
     plot(yPositions(i),xPositions(i),'r*');
     M(i) = getframe;
     pause(1/30);
