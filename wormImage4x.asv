@@ -68,7 +68,7 @@ correction_Im_FL = correction_Im_FL ./ max(max(correction_Im_FL)); %Normalizatio
 % svmModel = load('wormSVMModel.mat');
 
 %% Generate a list of positions on the plate to image
-load('50mm_plate_raster_scan_positions_4x_spiral.mat');
+load('50mm_plate_raster_scan_positions_spiral.mat');
 %X,Y are the index locations of the plate grid
 %stageX, stageY are the coordinates of the position in stage units
 %stageZ is the zoffset of the particular plate location relative to the
@@ -92,36 +92,19 @@ for i = 2:2:numel(xPositions)
         title(['Current Scan Position ' num2str(i) ' of ' num2str(tot_Positions)]);axis image;axis off;
         cprintf('*red','Autofocusing...\n')
         [normVar, ZOffset] = autoFocus(mmc,gui);
-        if i == 2
-            stageZ(yPositions(i),xPositions(i)) = ZOffset;
-            temp = ZOffset;
-        else
-            stageZ(yPositions(i),xPositions(i)) = ZOffset + temp;
-            temp = stageZ(yPositions(i),xPositions(i));
-        end
+        stageZ(yPositions(i),xPositions(i)) = ZOffset;
         axes(status_Plot(3));plot(normVar,'b.');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
     end
 end
-%And we subtract off the first position to put all distances relative to it
-stageZ = stageZ - stageZ(yPositions(1),xPositions(1));
 
 %Now that we have measured the Z offset for half the fields of view, we
 %interpolate the rest of the FOVs to get a focus map for the entire plate
 for i = 1:2:numel(xPositions)
-    if isnan(stageZ(yPositions(i),xPositions(i))) == 0
-        right = stageZ(yPositions(i),xPositions(i+1));
-        left = stageZ(yPositions(i),xPositions(i-1));
-        up = stageZ(yPositions(i+1),xPositions(i));
-        down = stageZ(yPositions(i-1),xPositions(i));
-        neighbors = [right, left, up, down];
-        neighbors(neighbors == 0) = [];
-        neighbors(isnan(neighbors)) = [];
-        stageZ(yPositions(i),xPositions(i)) = mean(neighbors);
-    end
-end
-
-        %% BEGINNING OF SCREENING
+    if stageZ(yPositions(i),xPositions(i)) == 0 
+        
+        
+%% BEGINNING OF SCREENING
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
