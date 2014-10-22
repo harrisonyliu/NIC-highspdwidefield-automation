@@ -99,7 +99,7 @@ end
 %zPositions will keep track of the ZOffset for each location on the plate
 stageZ = stageX;
 stageZ(find(stageX > 0)) = 0; stageZ(find(stageX < 0)) = 0;
-save('50mm_plate_raster_scan_positions_4x_spiral.mat','xPositions','yPositions','rows','cols', 'stageZ');
+save('50mm_plate_raster_scan_positions_4x_spiral.mat','xPositions','yPositions','rows','cols', 'stageZ','stageX','stageY');
 
 %% Debugging section, comment out otherwise
 % figure();plot(stageY,stageX,'b.');title('Round Grid Creation');

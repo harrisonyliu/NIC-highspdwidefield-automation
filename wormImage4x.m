@@ -85,10 +85,35 @@ screenTime = zeros(1,numel(xPositions));
 %Begin by autofocusing at every other field of view and saving the results
 %in a plate map (stageZ is NaN outside of the plate, 0 where nothing has
 %been measured, all other values are measured Z offsets
+mmc.setProperty('Zyla', 'Binning', '2x2')
+mmc.setProperty('ScopeLED','ActiveColor','Red');
+mmc.setProperty('ScopeLED','IntensityRed',1);
+mmc.setProperty('Zyla', 'AcquisitionWindow','1392x1040');
+mmc.setExposure(20);
+
+nImages = 11;
+cprintf('black','Initializing plate mapping autofocus, programming stage...\n')
+mmc.setSerialPortCommand('COM1', 'TTL X=1', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('black','Telling stage to move in Z...\n')
+mmc.setSerialPortCommand('COM1', 'RM Y=4 Z=0', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('*black','Programming piezo stage...\n')
+
+%Now we tell the stage what z-positions to visit
+for i = 1:nImages
+    currentZ = -900 + 150*i;
+    command = ['LD Z=' num2str(currentZ)];
+    cprintf('blue',['Programming Z = ' num2str(currentZ) '...\n'])
+    mmc.setSerialPortCommand('COM1', command, char(13))
+    %     answer = mmc.getSerialPortAnswer('COM1', char(10))
+end
+cprintf('*black','Done!\n')
+
 for i = 2:2:numel(xPositions)
     if isnan(stageZ(yPositions(i),xPositions(i))) == 0
         gui.setXYStagePosition(rows(yPositions(i)),cols(xPositions(i)));
-        axes(status_Plot(2));plot(xPositions,yPositions,'b.',xPositions(i),yPositions(i),'r*');
+        axes(status_Plot(2));plot(stageY,stageX,'b.',rows(yPositions(i)),cols(xPositions(i)),'r*');
         title(['Current Scan Position ' num2str(i) ' of ' num2str(tot_Positions)]);axis image;axis off;
         cprintf('*red','Autofocusing...\n')
         [normVar, ZOffset] = autoFocus(mmc,gui);
@@ -121,87 +146,97 @@ for i = 1:2:numel(xPositions)
     end
 end
 
-        %% BEGINNING OF SCREENING
+cprintf('*black','Removing stage programming...')
+mmc.setSerialPortCommand('COM1', 'RM X=0', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('*black','Done!\n')
+
+%% BEGINNING OF SCREENING
+mmc.setProperty('Zyla', 'Binning', '1x1')
+mmc.setProperty('ScopeLED','ActiveColor','Red');
+mmc.setProperty('ScopeLED','IntensityRed',1);
+mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
+mmc.setFocusDevice('TIZDrive');
+counter = 1; %This keeps track of what FOV we are currently in
+temp = 0;
+
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
-    disp(['Moving to position ' num2str(i) ' of ' num2str(tot_Positions)])
-    gui.setXYStagePosition(xPositions(i),yPositions(i));
-    axes(status_Plot(2));plot(xPositions,yPositions,'b.',xPositions(i),yPositions(i),'r*');
-    title(['Current Scan Position ' num2str(i) ' of ' num2str(tot_Positions)]);axis image;axis off;
-    %             mmc.snapImage();
-    %             w = mmc.getImageWidth();
-    %             h = mmc.getImageHeight();
-    %             img = reshape(typecast(mmc.getImage() ,imgType),w,h)';
-    %             figure();imagesc(img);colormap gray;axis off;axis image;
-    
-    %% Autofocus at the current FOV
-    cprintf('*red','Autofocusing...\n')
-    [normVar, ZOffset(i)] = autoFocus(mmc,gui);
-    axes(status_Plot(3));plot(normVar,'b.');
-    title(['Scan Position ' num2str(i) ' Focus Curve']);
-    %     w = mmc.getImageWidth();
-    %     h = mmc.getImageHeight();
-    %     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
-    %     axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
-    %     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
-    
-    %% Now snap a BF followed by a fluorescence image
-    %First set acquisition parameters to make sure the images come out
-    %correctly
-    mmc.setProperty('Zyla', 'Binning', '1x1')
-    mmc.setProperty('ScopeLED','ActiveColor','Red');
-    mmc.setProperty('ScopeLED','IntensityRed',1);
-    mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
-
-    cprintf('*blue','Acquiring parallel images...\n')
-    imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
-%     gui.closeAllAcquisitions();
-    
-    %Here are plots to show the latest captured image
-    axes(status_Plot(4));imagesc(imresize(imstack(:,:,1),0.25));colormap gray;
-    title(['Scan Position ' num2str(i) ' BF']);axis image;axis off;
-    axes(status_Plot(5));imagesc(imresize(imstack(:,:,2),0.25));colormap gray;
-    title(['Scan Position ' num2str(i) ' FL']);axis image;axis off;
-    
-    %Now show the worms that are extracted
-    cprintf('black','Analyzing images...\n');
-    [cropped, CC] = extractWorms(imstack(:,:,1),imstack(:,:,2),0.5);
-    %         worm_Ims = [worm_Ims cropped];
-    %         worm_FOVNum = [worm_FOVNum ones(1,numel(cropped))*i];
-    
-    %Here are plots to show the worms identified in the last image
-    labeled = labelmatrix(CC);
-    RGB_label = label2rgb(labeled,@jet,'k','shuffle');
-    axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
-    title(['Scan Position ' num2str(i) ' ID worms']);axis image;
-    
-    %Now we send the worm images to have their features extracted
-    %         res = zeros(numel(cropped),5);
-    %         for i = 1:numel(cropped)
-    %             res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
-    %         end
-    %         res
-    
-    %And classify the worms based on the extracted features
-    %         class = svmClassify(svmModel, res);
-    
-    %And finally we photoactivate the worms we wish to keep
-    %         for i = 1:numel(class)
-    %             if class(i) == 1
-    %                 photoactivate()
-    %             end
-    %         end
-    
-%     Once we have analyzed the worm images we no longer need them so we
-%     wipe the images from memory
-%     worm_Ims = cell(0);
-%     worm_FOVNum = [];
+    if isnan(stageZ(yPositions(i),xPositions(i))) == 0
+        disp(['Moving to position ' num2str(counter) ' of ' num2str(tot_Positions)])
+        currentX = xPositions(i);currentY = yPositions(i);
+        gui.setXYStagePosition(currentX,currentY);
+        z_Move = stageZ(currentY,currentX) - temp;
+        gui.setRelativeStagePosition(z_Move)
+        temp = stageZ(currentY,currentX);
+        axes(status_Plot(2));plot(stageY,stageX,'b.',rows(currentY),cols(currentX),'r*');        
+        title(['Current Scan Position ' num2str(counter) ' of ' num2str(tot_Positions)]);axis image;axis off;
+        %             mmc.snapImage();
+        %             w = mmc.getImageWidth();
+        %             h = mmc.getImageHeight();
+        %             img = reshape(typecast(mmc.getImage() ,imgType),w,h)';
+        %             figure();imagesc(img);colormap gray;axis off;axis image;
+        
+        %% Autofocus at the current FOV
+        cprintf('*red','Moving to autofocused location...\n')
+        %     w = mmc.getImageWidth();
+        %     h = mmc.getImageHeight();
+        %     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
+        %     axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
+        %     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
+        
+        %% Now snap a BF followed by a fluorescence image
+        %First set acquisition parameters to make sure the images come out
+        %correctly
+        
+        cprintf('*blue','Acquiring parallel images...\n')
+        imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
+        %     gui.closeAllAcquisitions();
+        
+        %Here are plots to show the latest captured image
+        axes(status_Plot(4));imagesc(imresize(imstack(:,:,1),0.25));colormap gray;
+        title(['Scan Position ' num2str(i) ' BF']);axis image;axis off;
+        axes(status_Plot(5));imagesc(imresize(imstack(:,:,2),0.25));colormap gray;
+        title(['Scan Position ' num2str(i) ' FL']);axis image;axis off;
+        
+        %Now show the worms that are extracted
+        cprintf('black','Analyzing images...\n');
+        [cropped, CC] = extractWorms(imstack(:,:,1),imstack(:,:,2),0.5);
+        %         worm_Ims = [worm_Ims cropped];
+        %         worm_FOVNum = [worm_FOVNum ones(1,numel(cropped))*i];
+        
+        %Here are plots to show the worms identified in the last image
+        labeled = labelmatrix(CC);
+        RGB_label = label2rgb(labeled,@jet,'k','shuffle');
+        axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
+        title(['Scan Position ' num2str(i) ' ID worms']);axis image;
+        
+        %Now we send the worm images to have their features extracted
+        %         res = zeros(numel(cropped),5);
+        %         for i = 1:numel(cropped)
+        %             res(i,:) = extractFeatures(cropped{i},regionprops(CC,'Area'));
+        %         end
+        %         res
+        
+        %And classify the worms based on the extracted features
+        %         class = svmClassify(svmModel, res);
+        
+        %And finally we photoactivate the worms we wish to keep
+        %         for i = 1:numel(class)
+        %             if class(i) == 1
+        %                 photoactivate()
+        %             end
+        %         end
+        
+        %     Once we have analyzed the worm images we no longer need them so we
+        %     wipe the images from memory
+        %     worm_Ims = cell(0);
+        %     worm_FOVNum = [];
+        
+        counter = counter +1;
+    end
 end
-% for i = 1:numel(worm_Ims)
-%     figure();imagesc(worm_Ims{i});colormap gray;
-%     title(['Worm ' num2str(i) ' in FOV number ' num2str(worm_FOVNum(i))]);
-% end
 
 %% Some debugging code
 % gui.enableLiveMode(0);

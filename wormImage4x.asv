@@ -68,7 +68,7 @@ correction_Im_FL = correction_Im_FL ./ max(max(correction_Im_FL)); %Normalizatio
 % svmModel = load('wormSVMModel.mat');
 
 %% Generate a list of positions on the plate to image
-load('50mm_plate_raster_scan_positions_spiral.mat');
+load('50mm_plate_raster_scan_positions_4x_spiral.mat');
 %X,Y are the index locations of the plate grid
 %stageX, stageY are the coordinates of the position in stage units
 %stageZ is the zoffset of the particular plate location relative to the
@@ -85,6 +85,31 @@ screenTime = zeros(1,numel(xPositions));
 %Begin by autofocusing at every other field of view and saving the results
 %in a plate map (stageZ is NaN outside of the plate, 0 where nothing has
 %been measured, all other values are measured Z offsets
+mmc.setProperty('Zyla', 'Binning', '2x2')
+mmc.setProperty('ScopeLED','ActiveColor','Red');
+mmc.setProperty('ScopeLED','IntensityRed',1);
+mmc.setProperty('Zyla', 'AcquisitionWindow','1392x1040');
+mmc.setExposure(20);
+
+nImages = 11;
+cprintf('black','Initializing plate mapping autofocus, programming stage...\n')
+mmc.setSerialPortCommand('COM1', 'TTL X=1', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('black','Telling stage to move in Z...\n')
+mmc.setSerialPortCommand('COM1', 'RM Y=4 Z=0', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('*black','Programming piezo stage...\n')
+
+%Now we tell the stage what z-positions to visit
+for i = 1:nImages
+    currentZ = -900 + 150*i;
+    command = ['LD Z=' num2str(currentZ)];
+    cprintf('blue',['Programming Z = ' num2str(currentZ) '...\n'])
+    mmc.setSerialPortCommand('COM1', command, char(13))
+%     answer = mmc.getSerialPortAnswer('COM1', char(10))
+end
+cprintf('*black','Done!\n')
+
 for i = 2:2:numel(xPositions)
     if isnan(stageZ(yPositions(i),xPositions(i))) == 0
         gui.setXYStagePosition(rows(yPositions(i)),cols(xPositions(i)));
@@ -92,22 +117,50 @@ for i = 2:2:numel(xPositions)
         title(['Current Scan Position ' num2str(i) ' of ' num2str(tot_Positions)]);axis image;axis off;
         cprintf('*red','Autofocusing...\n')
         [normVar, ZOffset] = autoFocus(mmc,gui);
-        stageZ(yPositions(i),xPositions(i)) = ZOffset;
+        if i == 2
+            stageZ(yPositions(i),xPositions(i)) = ZOffset;
+            temp = ZOffset;
+        else
+            stageZ(yPositions(i),xPositions(i)) = ZOffset + temp;
+            temp = stageZ(yPositions(i),xPositions(i));
+        end
         axes(status_Plot(3));plot(normVar,'b.');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
     end
 end
+%And we subtract off the first position to put all distances relative to it
+stageZ = stageZ - stageZ(yPositions(1),xPositions(1));
 
 %Now that we have measured the Z offset for half the fields of view, we
 %interpolate the rest of the FOVs to get a focus map for the entire plate
 for i = 1:2:numel(xPositions)
-    if stageZ(yPositions(i),xPositions(i)) == 0 
-        
-        
+    if isnan(stageZ(yPositions(i),xPositions(i))) == 0
+        right = stageZ(yPositions(i),xPositions(i+1));
+        left = stageZ(yPositions(i),xPositions(i-1));
+        up = stageZ(yPositions(i+1),xPositions(i));
+        down = stageZ(yPositions(i-1),xPositions(i));
+        neighbors = [right, left, up, down];
+        neighbors(neighbors == 0) = [];
+        neighbors(isnan(neighbors)) = [];
+        stageZ(yPositions(i),xPositions(i)) = mean(neighbors);
+    end
+end
+
+cprintf('*black','Removing stage programming...')
+mmc.setSerialPortCommand('COM1', 'RM X=0', char(13));
+answer = mmc.getSerialPortAnswer('COM1', char(10))
+cprintf('*black','Done!\n')
+
 %% BEGINNING OF SCREENING
+mmc.setProperty('Zyla', 'Binning', '1x1')
+mmc.setProperty('ScopeLED','ActiveColor','Red');
+mmc.setProperty('ScopeLED','IntensityRed',1);
+mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
+
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
+    if isnan(stageZ(yPositions(i),xPositions(i))) == 0
     disp(['Moving to position ' num2str(i) ' of ' num2str(tot_Positions)])
     gui.setXYStagePosition(xPositions(i),yPositions(i));
     axes(status_Plot(2));plot(xPositions,yPositions,'b.',xPositions(i),yPositions(i),'r*');
@@ -119,10 +172,7 @@ for i = 1:numel(xPositions)
     %             figure();imagesc(img);colormap gray;axis off;axis image;
     
     %% Autofocus at the current FOV
-    cprintf('*red','Autofocusing...\n')
-    [normVar, ZOffset(i)] = autoFocus(mmc,gui);
-    axes(status_Plot(3));plot(normVar,'b.');
-    title(['Scan Position ' num2str(i) ' Focus Curve']);
+    cprintf('*red','Moving to autofocused location...\n')
     %     w = mmc.getImageWidth();
     %     h = mmc.getImageHeight();
     %     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
@@ -132,10 +182,6 @@ for i = 1:numel(xPositions)
     %% Now snap a BF followed by a fluorescence image
     %First set acquisition parameters to make sure the images come out
     %correctly
-    mmc.setProperty('Zyla', 'Binning', '1x1')
-    mmc.setProperty('ScopeLED','ActiveColor','Red');
-    mmc.setProperty('ScopeLED','IntensityRed',1);
-    mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
 
     cprintf('*blue','Acquiring parallel images...\n')
     imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
@@ -180,7 +226,8 @@ for i = 1:numel(xPositions)
 %     wipe the images from memory
 %     worm_Ims = cell(0);
 %     worm_FOVNum = [];
-end
+
+    end
 % for i = 1:numel(worm_Ims)
 %     figure();imagesc(worm_Ims{i});colormap gray;
 %     title(['Worm ' num2str(i) ' in FOV number ' num2str(worm_FOVNum(i))]);
