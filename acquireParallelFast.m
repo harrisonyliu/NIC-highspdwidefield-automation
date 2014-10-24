@@ -7,6 +7,7 @@ h = mmc.getImageHeight();
 %Acquire the image and save it to a file
 cprintf('blue','Imaging: Acquiring images...');
 
+tic
 %Take a brightfield image
 mmc.setShutterDevice('ScopeLED');
 mmc.setExposure(30);
@@ -19,6 +20,8 @@ mmc.setExposure(100);
 mmc.snapImage();
 FL_temp = mmc.getImage();
 
+toc
+tic
 %Prepare images for further analysis
 BF = single(reshape(typecast(BF_temp ,'uint16'),w,h)');
 FL = single(reshape(typecast(FL_temp ,'uint16'),w,h)');
@@ -26,6 +29,7 @@ FL = single(reshape(typecast(FL_temp ,'uint16'),w,h)');
 %Do some flatfield correction
 BF = (BF - drkfield) ./ correction_Im;
 FL = (FL - drkfield) ./ correction_Im_FL;
+toc
 
 %Now return the result
 imstack = zeros(w,h,2);

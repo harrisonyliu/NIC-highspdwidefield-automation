@@ -20,6 +20,7 @@ autoFocusHalfRange = 75; %E.g. autofocus will scan 75um above and below the curr
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 nImages = 11;
+
 cprintf('black','Initializing plate mapping autofocus, programming stage...\n')
 mmc.setSerialPortCommand('COM1', 'TTL X=1', char(13));
 % answer = mmc.getSerialPortAnswer('COM1', char(10))
@@ -90,7 +91,7 @@ cprintf('*black','Removing stage programming...')
 mmc.setSerialPortCommand('COM1', 'RM X=0', char(13));
 % answer = mmc.getSerialPortAnswer('COM1', char(10))
 cprintf('*black','Done!\n')
-% 
+
 % mmc.snapImage();
 % w = mmc.getImageWidth();
 % h = mmc.getImageHeight();

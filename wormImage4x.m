@@ -135,7 +135,7 @@ for i = 1:2:numel(xPositions)
     end
 end
 
-%% BEGINNING OF SCREENING
+%% Screening image acquisition
 mmc.setProperty('Zyla', 'Binning', '1x1')
 mmc.setProperty('ScopeLED','ActiveColor','Red');
 mmc.setProperty('ScopeLED','IntensityRed',1);
@@ -145,35 +145,23 @@ counter = 1; %This keeps track of what FOV we are currently in
 temp = 0;
 
 %Begin by moving to a new position and running through the script
-tic
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
     if isnan(stageZ(yPositions(i),xPositions(i))) == 0
-        disp(['Moving to position ' num2str(counter) ' of ' num2str(tot_Positions)])
         currentX = xPositions(i);currentY = yPositions(i);
+        
+        %Move to current imaging location
+        disp(['Moving to position ' num2str(counter) ' of ' num2str(tot_Positions)])
         gui.setXYStagePosition(cols(currentX),rows(currentY));
+        
+        %Autofocusing at previously acquired location
+        cprintf('*red','Moving to autofocused location...\n')
         z_Move = stageZ(currentY,currentX);
         gui.setStagePosition(z_Move);
         axes(status_Plot(2));plot(stageY,stageX,'b.',rows(currentY),cols(currentX),'r*');        
         title(['Current Scan Position ' num2str(counter) ' of ' num2str(tot_Positions)]);axis image;axis off;
-        %             mmc.snapImage();
-        %             w = mmc.getImageWidth();
-        %             h = mmc.getImageHeight();
-        %             img = reshape(typecast(mmc.getImage() ,imgType),w,h)';
-        %             figure();imagesc(img);colormap gray;axis off;axis image;
         
-        %% Autofocus at the current FOV
-        cprintf('*red','Moving to autofocused location...\n')
-        %     w = mmc.getImageWidth();
-        %     h = mmc.getImageHeight();
-        %     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
-        %     axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
-        %     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
-        
-        %% Now snap a BF followed by a fluorescence image
-        %First set acquisition parameters to make sure the images come out
-        %correctly
-        
+        %Now snap a BF followed by a fluorescence image
         cprintf('*blue','Acquiring parallel images...\n')
         imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
         %     gui.closeAllAcquisitions();
@@ -227,7 +215,6 @@ for i = 1:numel(xPositions)
         counter = counter +1;
     end
 end
-toc
 
 %% Some debugging code
 % gui.enableLiveMode(0);
@@ -247,3 +234,10 @@ toc
 % var_Blank = [var_Blank var(temp)]
 % med_Blank = [med_Blank median(temp)]
 % gui.enableLiveMode(1);
+
+%% Autofocus at the current FOV
+%     w = mmc.getImageWidth();
+%     h = mmc.getImageHeight();
+%     snapIm = reshape(typecast(mmc.getImage() ,imgType),w,h)';
+%     axes(status_Plot(1));imagesc(snapIm);colormap gray; axis image;axis off;
+%     title(['Scan Position ' num2str(i) ' Autofocus Snap']);
