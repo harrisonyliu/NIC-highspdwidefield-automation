@@ -1,4 +1,4 @@
-function [xPositions, yPositions, rows, cols, stageZ, M] = createRoundGridSpiral()
+function [xPositions, yPositions, rows, cols, stageZ, M] = createRoundGridSpiral(mmc)
 %% Petri Dish Scanning - this will create a raster scan pattern of a petri dish, simply give the function the center of the stage, the size of the petri dish, and how much trim you want at the edges
 %For conventions sake all coordinates are listed here in Cartesian
 %coordinates (X,Y) rather than Matlab coordinates (Y,X)
@@ -7,8 +7,8 @@ function [xPositions, yPositions, rows, cols, stageZ, M] = createRoundGridSpiral
 %Center of the dish at location [-12500, 8500] (units are in um)
 homeX = 9800;
 homeY = -3800;
-% w = mmc.getImageWidth();
-% h = mmc.getImageHeight();
+w = mmc.getImageWidth();
+h = mmc.getImageHeight();
 
 w = 2048;
 h = 2048;
@@ -16,11 +16,11 @@ h = 2048;
 petriDiam = 50000;
 %How many fields of view to trim around the borders of the petri dish to
 %ensure that edge effects are not captured. MUST BE AN INTEGER AMOUNT!!!
-trim_amount = 2;
+trim_amount = 5;
 
 %% Now to create the raster scan pattern, we assume home is at (0,0) for now
-% pixSize = mmc.getPixelSizeUm();
-pixSize = 1.6125;
+pixSize = mmc.getPixelSizeUm();
+% pixSize = 1.6125;
 fovW = pixSize * w;
 fovH = pixSize * h;
 %Find out how many fields of view in the x direction
@@ -99,7 +99,7 @@ end
 %zPositions will keep track of the ZOffset for each location on the plate
 stageZ = stageX;
 stageZ(find(stageX > 0)) = 0; stageZ(find(stageX < 0)) = 0;
-save('50mm_plate_raster_scan_positions_4x_spiral.mat','xPositions','yPositions','rows','cols', 'stageZ','stageX','stageY');
+save('50mm_plate_raster_scan_positions_10x_spiral.mat','xPositions','yPositions','rows','cols', 'stageZ','stageX','stageY');
 
 %% Debugging section, comment out otherwise
 % figure();plot(stageY,stageX,'b.');title('Round Grid Creation');
