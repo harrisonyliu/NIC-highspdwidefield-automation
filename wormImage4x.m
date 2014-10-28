@@ -136,6 +136,12 @@ for i = 1:2:numel(xPositions)
     end
 end
 
+%Plot an interpolated surface to verify that the plate is appropriate
+Vq = interp2(stageZ(4:12,4:12),3); Vq = Vq - 0.9*min(min(Vq));
+axes(status_Plot(3));h = surf(Vq);set(h,'LineStyle','none');
+axis([1 size(Vq,2) 1 size(Vq,1) ]);axis image;
+title('Plate Surface Mapping');
+
 % %% Screening image acquisition
 % mmc.setProperty('Zyla', 'Binning', '1x1')
 % mmc.setProperty('ScopeLED','ActiveColor','Red');
