@@ -7,10 +7,13 @@ if ~exist('gui', 'var')
     cd 'c:/program files/Micro-Manager-1.4.18'
     import org.micromanager.MMStudioMainFrame;
     import ij.ImageJ;
+    import ij.plugin.frame.RoiManager;
+    import ij.gui.Roi;
     ij.ImageJ;
     gui = MMStudioMainFrame(false);
     gui.show();
     uiwait(msgbox('Press when Micro-Manager finishes loading'));
+    pp = org.micromanager.projector.ProjectorControlForm.showSingleton(mmc, gui)
     mmc = gui.getCore;
     acq = gui.getAcquisitionEngine;
     cd 'C:\Users\nicuser\Documents\MATLAB\NIC-highspdwidefield-automation'
