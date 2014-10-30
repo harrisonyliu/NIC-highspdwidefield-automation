@@ -5,7 +5,7 @@ ROImgr = RoiManager.getInstance();
 pp = org.micromanager.projector.ProjectorControlForm.showSingleton(mmc, gui)
 
 %get imageplus from snap live window
-ROImgr.addRoi(Roi(800,800,200,200));
+ROImgr.addRoi(Roi(1200,1200,200,200));
 ROImgr.addRoi(Roi(1000,1000,300,300));
 
 
