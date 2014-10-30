@@ -13,7 +13,7 @@ if ~exist('gui', 'var')
     gui = MMStudioMainFrame(false);
     gui.show();
     uiwait(msgbox('Press when Micro-Manager finishes loading'));
-    pp = org.micromanager.projector.ProjectorControlForm.showSingleton(mmc, gui)
+    pp = org.micromanager.projector.ProjectorControlForm.showSingleton(mmc, gui);
     mmc = gui.getCore;
     acq = gui.getAcquisitionEngine;
     cd 'C:\Users\nicuser\Documents\MATLAB\NIC-highspdwidefield-automation'
