@@ -214,9 +214,9 @@ for i = 1:numel(xPositions)
             ROImgr.addRoi(Roi(x0,y0,dx,dy));
         end
         gui.enableLiveMode(1);
-%         pp.sendCurrentImageWindowRois()
-%         pp.updateROISettings()
-%         pp.runRois()
+        pp.sendCurrentImageWindowRois()
+        pp.updateROISettings()
+        pp.runRois()
 
         %Now we send the worm images to have their features extracted
         %         res = zeros(numel(cropped),5);
