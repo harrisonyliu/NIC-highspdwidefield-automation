@@ -111,6 +111,7 @@ mmc.setExposure(25);
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 
+tic
 for i = 2:2:numel(xPositions)
     if isnan(stageZ(yPositions(i),xPositions(i))) == 0
         gui.setXYStagePosition(cols(xPositions(i)),rows(yPositions(i))); %Move to current FOV
@@ -126,6 +127,7 @@ for i = 2:2:numel(xPositions)
         axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
     end
 end
+toc
 
 %Now that we have measured the Z offset for half the fields of view, we
 %interpolate the rest of the FOVs to get a focus map for the entire plate
@@ -176,8 +178,8 @@ for i = 1:numel(xPositions)
         
         %Now snap a BF followed by a fluorescence image
         cprintf('*blue','Acquiring parallel images...\n')
-        ROImgr.runCommand('Delete')
-        gui.enableLiveMode(0);
+%         ROImgr.runCommand('Delete')
+%         gui.enableLiveMode(0);
         imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
         %     gui.closeAllAcquisitions();
         
@@ -213,10 +215,10 @@ for i = 1:numel(xPositions)
             dy = boundingboxes(i).BoundingBox(4)*2 + 100;
             ROImgr.addRoi(Roi(x0,y0,dx,dy));
         end
-        gui.enableLiveMode(1);
-        pp.sendCurrentImageWindowRois()
-        pp.updateROISettings()
-        pp.runRois()
+%         gui.enableLiveMode(1);
+%         pp.sendCurrentImageWindowRois()
+%         pp.updateROISettings()
+%         pp.runRois()
 
         %Now we send the worm images to have their features extracted
         %         res = zeros(numel(cropped),5);
