@@ -122,9 +122,9 @@ for i = 2:2:numel(xPositions)
         stageZ(yPositions(i),xPositions(i)) = mmc.getPosition('TIZDrive');
         axes(status_Plot(3));plot([-75:15:75],normVar,'b-');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
-        mmc.snapImage();
-        img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
-        axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
+%         mmc.snapImage();
+%         img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
+%         axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
     end
 end
 toc
@@ -207,14 +207,14 @@ for i = 1:numel(xPositions)
         axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
         title(['Scan Position ' num2str(i) ' ID worms']);axis image;
         
-        boundingboxes = regionprops(CC,'BoundingBox');
-        for i = 1:numel(boundingboxes)
-            x0 = boundingboxes(i).BoundingBox(1)*2 - 50;
-            y0 = boundingboxes(i).BoundingBox(2)*2 - 50;
-            dx = boundingboxes(i).BoundingBox(3)*2 + 100;
-            dy = boundingboxes(i).BoundingBox(4)*2 + 100;
-            ROImgr.addRoi(Roi(x0,y0,dx,dy));
-        end
+%         boundingboxes = regionprops(CC,'BoundingBox');
+%         for i = 1:numel(boundingboxes)
+%             x0 = boundingboxes(i).BoundingBox(1)*2 - 50;
+%             y0 = boundingboxes(i).BoundingBox(2)*2 - 50;
+%             dx = boundingboxes(i).BoundingBox(3)*2 + 100;
+%             dy = boundingboxes(i).BoundingBox(4)*2 + 100;
+%             ROImgr.addRoi(Roi(x0,y0,dx,dy));
+%         end
 %         gui.enableLiveMode(1);
 %         pp.sendCurrentImageWindowRois()
 %         pp.updateROISettings()
