@@ -16,7 +16,6 @@ if ~exist('gui', 'var')
     mmc = gui.getCore;
     acq = gui.getAcquisitionEngine;
     pp = org.micromanager.projector.ProjectorControlForm.showSingleton(mmc, gui);
-    ROImgr = RoiManager.getInstance();
     cd 'C:\Users\nicuser\Documents\MATLAB\NIC-highspdwidefield-automation'
 end
 
@@ -82,7 +81,6 @@ drkfield_small = readMicroManagerTif('C:\MMConfigs\Correction Images\1392x1040\D
 cprintf('*black','Removing stage programming...')
 clear stageZ;
 mmc.setSerialPortCommand('COM1', 'RM X=0', char(13));
-% answer = mmc.getSerialPortAnswer('COM1', char(10))
 cprintf('*black','Done!\n')
 
 %% Generate a list of positions on the plate to image
@@ -111,7 +109,12 @@ mmc.setExposure(25);
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 
-tic
+%Let the user focus for the first FOV
+gui.setXYStagePosition(cols(xPositions(1)),rows(yPositions(1))); %Move to current FOV
+gui.enableLiveMode(1);
+uiwait(msgbox('Press when first FOV is focused'));
+gui.enableLiveMode(0);
+
 for i = 2:2:numel(xPositions)
     if isnan(stageZ(yPositions(i),xPositions(i))) == 0
         gui.setXYStagePosition(cols(xPositions(i)),rows(yPositions(i))); %Move to current FOV
@@ -122,12 +125,11 @@ for i = 2:2:numel(xPositions)
         stageZ(yPositions(i),xPositions(i)) = mmc.getPosition('TIZDrive');
         axes(status_Plot(3));plot([-75:15:75],normVar,'b-');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
-%         mmc.snapImage();
-%         img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
-%         axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
+        mmc.snapImage();
+        img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
+        axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
     end
 end
-toc
 
 %Now that we have measured the Z offset for half the fields of view, we
 %interpolate the rest of the FOVs to get a focus map for the entire plate
@@ -158,6 +160,10 @@ mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
 mmc.setFocusDevice('TIZDrive');
 counter = 1; %This keeps track of what FOV we are currently in
 temp = 0;
+gui.enableLiveMode(1);%Initialize the live window and ROI manager for tracking photoactivation.
+ROImgr = RoiManager();
+ROImgr.runCommand('Show All');
+gui.enableLiveMode(0);
 
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
@@ -178,10 +184,7 @@ for i = 1:numel(xPositions)
         
         %Now snap a BF followed by a fluorescence image
         cprintf('*blue','Acquiring parallel images...\n')
-%         ROImgr.runCommand('Delete')
-%         gui.enableLiveMode(0);
         imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
-        %     gui.closeAllAcquisitions();
         
         %Here are plots to show the latest captured image
         axes(status_Plot(4));imagesc(imresize(imstack(:,:,1),0.25));colormap gray;
@@ -198,8 +201,6 @@ for i = 1:numel(xPositions)
         %Now show the worms that are extracted
         cprintf('black','Analyzing images...\n');
         [cropped, CC] = extractWorms(imstack(:,:,1),imstack(:,:,2),0.5);
-        %         worm_Ims = [worm_Ims cropped];
-        %         worm_FOVNum = [worm_FOVNum ones(1,numel(cropped))*i];
         
         %Here are plots to show the worms identified in the last image
         labeled = labelmatrix(CC);
@@ -207,18 +208,10 @@ for i = 1:numel(xPositions)
         axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
         title(['Scan Position ' num2str(i) ' ID worms']);axis image;
         
-%         boundingboxes = regionprops(CC,'BoundingBox');
-%         for i = 1:numel(boundingboxes)
-%             x0 = boundingboxes(i).BoundingBox(1)*2 - 50;
-%             y0 = boundingboxes(i).BoundingBox(2)*2 - 50;
-%             dx = boundingboxes(i).BoundingBox(3)*2 + 100;
-%             dy = boundingboxes(i).BoundingBox(4)*2 + 100;
-%             ROImgr.addRoi(Roi(x0,y0,dx,dy));
-%         end
-%         gui.enableLiveMode(1);
-%         pp.sendCurrentImageWindowRois()
-%         pp.updateROISettings()
-%         pp.runRois()
+        boundingboxes = regionprops(CC,'BoundingBox');
+        if numel(boundingboxes) > 0
+            photoactivate(mmc,gui,pp,ROImgr,boundingboxes)
+        end
 
         %Now we send the worm images to have their features extracted
         %         res = zeros(numel(cropped),5);
