@@ -23,6 +23,6 @@ if numel(boundingboxes) > 0
     photoactivate(mmc,gui,pp,ROImgr,boundingboxes)
 end
 
+gui.enableLiveMode(1);
 mmc.setShutterDevice('ScopeLED');
 mmc.setExposure(30);
-gui.enableLiveMode(1);
