@@ -67,15 +67,15 @@ w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 
 %Here we read in correction images for fluorescence and brightfield
-correction_Im = readMicroManagerTif('C:\MMConfigs\Correction Images\2048 x 2048\4x\BF-Cy3_plate_4x.tif',w,h);
+correction_Im = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\2048 x 2048\4x\BF-Cy3_plate_4x.tif',w,h);
 correction_Im = correction_Im ./ max(max(correction_Im)); %Normalization step
-drkfield = readMicroManagerTif('C:\MMConfigs\Correction Images\2048 x 2048\Darkfield.tif',w,h);
-correction_Im_FL = readMicroManagerTif('C:\MMConfigs\Correction Images\2048 x 2048\4x\Cy3.tif',w,h);
+drkfield = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\2048 x 2048\Darkfield.tif',w,h);
+correction_Im_FL = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\2048 x 2048\4x\Cy3.tif',w,h);
 correction_Im_FL = correction_Im_FL ./ max(max(correction_Im_FL)); %Normalization step
-correction_Im_small = readMicroManagerTif('C:\MMConfigs\Correction Images\1392x1040\Cy3-BF.tif',1040,1392);
+correction_Im_small = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\1392x1040\Cy3-BF.tif',1040,1392);
 correction_Im_small = reshape(correction_Im_small',1,numel(correction_Im_small));
 correction_Im_small = correction_Im_small ./ max(correction_Im_small);
-drkfield_small = readMicroManagerTif('C:\MMConfigs\Correction Images\1392x1040\Darkfield.tif',1040,1392);
+drkfield_small = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\1392x1040\Darkfield.tif',1040,1392);
 % svmModel = load('wormSVMModel.mat');
 
 cprintf('*black','Removing stage programming...')
@@ -84,7 +84,7 @@ mmc.setSerialPortCommand('COM1', 'RM X=0', char(13));
 cprintf('*black','Done!\n')
 
 %% Generate a list of positions on the plate to image
-load('50mm_plate_raster_scan_positions_4x_spiral.mat');
+load('50mm_plate_raster_scan_positions_4x_spiral_alternate.mat');
 %X,Y are the index locations of the plate grid
 %stageX, stageY are the coordinates of the position in stage units
 %stageZ is the zoffset of the particular plate location relative to the

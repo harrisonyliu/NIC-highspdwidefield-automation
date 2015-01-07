@@ -5,8 +5,10 @@ function [xPositions, yPositions, rows, cols, stageZ, M] = createRoundGridSpiral
 
 %% Input parameters
 %Center of the dish at location [-12500, 8500] (units are in um)
-homeX = 9800;
-homeY = -3800;
+% homeX = 9800;
+% homeY = -3800;
+homeX = -38000;
+homeY = -18000;
 w = mmc.getImageWidth();
 h = mmc.getImageHeight();
 
@@ -16,7 +18,7 @@ h = 2048;
 petriDiam = 50000;
 %How many fields of view to trim around the borders of the petri dish to
 %ensure that edge effects are not captured. MUST BE AN INTEGER AMOUNT!!!
-trim_amount = 5;
+trim_amount = 2;
 
 %% Now to create the raster scan pattern, we assume home is at (0,0) for now
 pixSize = mmc.getPixelSizeUm();
@@ -99,10 +101,10 @@ end
 %zPositions will keep track of the ZOffset for each location on the plate
 stageZ = stageX;
 stageZ(find(stageX > 0)) = 0; stageZ(find(stageX < 0)) = 0;
-save('50mm_plate_raster_scan_positions_10x_spiral.mat','xPositions','yPositions','rows','cols', 'stageZ','stageX','stageY');
+save('50mm_plate_raster_scan_positions_4x_spiral_alternate.mat','xPositions','yPositions','rows','cols', 'stageZ','stageX','stageY');
 
 %% Debugging section, comment out otherwise
-% figure();plot(stageY,stageX,'b.');title('Round Grid Creation');
+figure();plot(stageY,stageX,'b.');title('Round Grid Creation');
 figure();plot(stageY,stageX,'b.');title('Spiral Scan Animation');
 hold on;
 plot(homeY,homeX,'go');
