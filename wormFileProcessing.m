@@ -9,18 +9,26 @@ function worms = wormFileProcessing(root)
 %the images taken by micromanager. This assumes you used the "save as image
 %stack" option and that each FOV is contained within its own folder
 % root = 'E:\Harrison';
-root = 'D:\2014.10.03 Worm Imaging\lipl4\First 30';
+root = 'F:\2014.10.30 Worm Imaging\lgg1';
 w = 2048;
 h = 2048;
 D = dir(root);
-numIm = numel(D) - 2;
+BF_dir = fullfile(root,D(end-1).name);
+FL_dir = fullfile(root,D(end).name);
+BF_files = dir(BF_dir);
+BF_files = BF_files(3:end);
+FL_files = dir(FL_dir);
+FL_files = FL_files(3:end);
+numIm = numel(dir(BF_dir)) - 2;
 imstack = cell(1,numIm);
-for i = 3:numel(D)
-    cprintf('*black',['Reading image ' num2str(i-2) ' of ' num2str(numIm) '\n'])
-    fname_temp = fullfile(root, D(i).name);
-    imname = dir(fname_temp);
-    fname = fullfile(fname_temp,imname(3).name);
-    imstack{i-2} = readMicroManagerTif(fname,w,h);
+for i = 1:numIm
+    cprintf('*black',['Reading image ' num2str(i) ' of ' num2str(numIm) '\n'])
+    fname_temp_BF = fullfile(BF_dir, BF_files(i).name);
+    fname_temp_FL = fullfile(FL_dir, FL_files(i).name);
+    im_temp = zeros(w,h,2);
+    im_temp(:,:,1) = imread(fname_temp_BF);
+    im_temp(:,:,2) = imread(fname_temp_FL);
+    imstack{i} = im_temp;
 %     figure();imagesc(imstack{i-2}(:,:,2));axis image;axis off;colormap gray;
 end
 cprintf('*red','Done loading images!\n')

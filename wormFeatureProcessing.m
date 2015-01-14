@@ -5,6 +5,8 @@ numFeats = 5;
 res = zeros(numel(im_in_cells),numFeats);
 
 for i = 1:numel(im_in_cells)
-    area = numel(find(im_in_cells{i})); %Area of worm = all nonzero elements
-    res(i,:) = extractFeatures(im_in_cells{i},area);
+    temp = im_in_cells{i};
+    im_normalized = temp ./ max(max(temp));
+    area = numel(find(im_normalized)); %Area of worm = all nonzero elements
+    res(i,:) = extractFeatures(im_normalized,area);
 end

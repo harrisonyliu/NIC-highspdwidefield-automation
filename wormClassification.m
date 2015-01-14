@@ -9,7 +9,8 @@ temp_lipl4 = zeros(size(lipl4,1),1);
 temp_lgg1 = ones(size(lgg1,1),1);
 trainingClass = [temp_lipl4; temp_lgg1];
 trainingData = [lipl4; lgg1];
-svmStruct = svmtrain(trainingData, trainingClass);
+opt = statset('MaxIter',100000);
+svmStruct = svmtrain(trainingData, trainingClass, 'BoxConstraint',Inf,'options',opt);
 
 % %% Performance evaluation (10-fold cross validation)
 % indices = crossvalind('Kfold',trainingClass,10);

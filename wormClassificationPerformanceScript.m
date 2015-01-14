@@ -2,9 +2,9 @@ close all
 clear all
 
 %% Loading data
-load('lgg1training.mat');
+load('2015.01.09 lgg1 training.mat');
 lgg1 = truncated_Images;
-load('lipl4training.mat');
+load('2015.01.09 lipl4 training.mat');
 lipl4 = truncated_Images;
 
 %% Extracting features
