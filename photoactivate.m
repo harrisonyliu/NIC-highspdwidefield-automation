@@ -1,5 +1,9 @@
-function photoactivate(mmc,gui,pp,ROImgr,boundingboxes)
+function photoactivate(mmc,gui,pp,boundingboxes)
 import ij.gui.Roi;
+import ij.ImageJ;
+import ij.plugin.frame.RoiManager;
+ROImgr = RoiManager();
+ROImgr.runCommand('Show All');
 tot_Area = 0;
 
 for i = 1:numel(boundingboxes)
@@ -21,3 +25,4 @@ disp(['Pausing for ' num2str(pause_time) ' seconds to photoactivate ' ...
 pause(pause_time);
 gui.enableLiveMode(0);
 ROImgr.runCommand('Delete');
+ROImgr.close();

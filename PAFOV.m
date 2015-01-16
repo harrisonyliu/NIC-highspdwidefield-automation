@@ -1,3 +1,14 @@
+mmc.setProperty('Zyla', 'Binning', '1x1')
+mmc.setProperty('ScopeLED','ActiveColor','Red');
+mmc.setProperty('ScopeLED','IntensityRed',1);
+mmc.setProperty('Zyla', 'AcquisitionWindow','2048x2048');
+mmc.setFocusDevice('TIZDrive');
+counter = 1; %This keeps track of what FOV we are currently in
+temp = 0;
+gui.enableLiveMode(1);%Initialize the live window and ROI manager for tracking photoactivation.
+% ROImgr.runCommand('Show All');
+gui.enableLiveMode(0);
+
 gui.enableLiveMode(0);
 cprintf('*blue','Acquiring parallel images...\n')
 imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
@@ -20,7 +31,7 @@ title(['Scan Position ' num2str(i) ' ID worms']);axis image;
 
 boundingboxes = regionprops(CC,'BoundingBox');
 if numel(boundingboxes) > 0
-    photoactivate(mmc,gui,pp,ROImgr,boundingboxes)
+    photoactivate(mmc,gui,pp,boundingboxes)
 end
 
 gui.enableLiveMode(1);

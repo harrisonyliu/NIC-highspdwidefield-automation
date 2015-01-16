@@ -161,8 +161,6 @@ mmc.setFocusDevice('TIZDrive');
 counter = 1; %This keeps track of what FOV we are currently in
 temp = 0;
 gui.enableLiveMode(1);%Initialize the live window and ROI manager for tracking photoactivation.
-ROImgr = RoiManager();
-ROImgr.runCommand('Show All');
 gui.enableLiveMode(0);
 
 %Begin by moving to a new position and running through the script
@@ -210,7 +208,7 @@ for i = 1:numel(xPositions)
         
         boundingboxes = regionprops(CC,'BoundingBox');
         if numel(boundingboxes) > 0
-            photoactivate(mmc,gui,pp,ROImgr,boundingboxes)
+            photoactivate(mmc,gui,pp,boundingboxes)
         end
 
         %Now we send the worm images to have their features extracted
