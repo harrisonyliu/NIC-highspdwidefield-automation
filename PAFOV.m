@@ -9,6 +9,9 @@ gui.enableLiveMode(1);%Initialize the live window and ROI manager for tracking p
 % ROImgr.runCommand('Show All');
 gui.enableLiveMode(0);
 
+mmc.setShutterDevice('ScopeLED');
+mmc.setExposure(30);
+
 gui.enableLiveMode(0);
 cprintf('*blue','Acquiring parallel images...\n')
 imstack = acquireParallelFast(mmc,gui,drkfield,correction_Im,correction_Im_FL);
@@ -35,5 +38,5 @@ if numel(boundingboxes) > 0
 end
 
 gui.enableLiveMode(1);
-mmc.setShutterDevice('ScopeLED');
-mmc.setExposure(30);
+% mmc.setShutterDevice('ScopeLED');
+% mmc.setExposure(30);
