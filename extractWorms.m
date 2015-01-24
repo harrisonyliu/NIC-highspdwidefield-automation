@@ -7,7 +7,8 @@ function [cropped, CC] = extractWorms(im,FL,scaleFactor)
 % the initial processing faster (e.g. 0.5 for making the image half size).
 bkgDisk = scaleFactor * 100;
 closeDisk = scaleFactor * 24;
-areaDisk = scaleFactor * 2000;
+areaDisk = scaleFactor * 9000;
+% areaDisk = scaleFactor * 2000;
 
 %First we need to invert the image so the "signal"/worms are bright on a
 %black background

@@ -77,6 +77,7 @@ correction_Im_small = reshape(correction_Im_small',1,numel(correction_Im_small))
 correction_Im_small = correction_Im_small ./ max(correction_Im_small);
 drkfield_small = readMicroManagerTif('C:\MMConfigs\Correction Images\Images for old plugin\1392x1040\Darkfield.tif',1040,1392);
 % svmModel = load('wormSVMModel.mat');
+pa_count = 0;
 
 cprintf('*black','Removing stage programming...')
 clear stageZ;
@@ -163,6 +164,7 @@ temp = 0;
 gui.enableLiveMode(1);%Initialize the live window and ROI manager for tracking photoactivation.
 gui.enableLiveMode(0);
 
+tic
 %Begin by moving to a new position and running through the script
 for i = 1:numel(xPositions)
     %Loop through each of the image positions, focus, and snap an image
@@ -191,10 +193,10 @@ for i = 1:numel(xPositions)
         title(['Scan Position ' num2str(counter) ' FL']);axis image;axis off;
         
         %Save images for offline analysis if needed
-%         BF = imstack(:,:,1) ./ max(max(imstack(:,:,1)));
-%         FL = imstack(:,:,2) ./ max(max(imstack(:,:,2)));
-%         imwrite(BF,[BF_dir '\' date '_BF_' num2str(counter) '.png']);
-%         imwrite(FL,[FL_dir '\' date '_FL_' num2str(counter) '.png']);
+        BF = imstack(:,:,1) ./ max(max(imstack(:,:,1)));
+        FL = imstack(:,:,2) ./ max(max(imstack(:,:,2)));
+        imwrite(BF,[BF_dir '\' date '_BF_' num2str(counter) '.png']);
+        imwrite(FL,[FL_dir '\' date '_FL_' num2str(counter) '.png']);
         
         %Now show the worms that are extracted
         cprintf('black','Analyzing images...\n');
@@ -209,6 +211,7 @@ for i = 1:numel(xPositions)
         boundingboxes = regionprops(CC,'BoundingBox');
         if numel(boundingboxes) > 0
             photoactivate(mmc,gui,pp,boundingboxes)
+            pa_count = pa_count + numel(boundingboxes);
         end
 
         %Now we send the worm images to have their features extracted
@@ -236,6 +239,8 @@ for i = 1:numel(xPositions)
         counter = counter +1;
     end
 end
+toc
+pa_count
 
 %% Some debugging code
 % gui.enableLiveMode(0);

@@ -2,9 +2,9 @@ close all
 clear all
 
 %% Loading data
-load('2015.01.09 lgg1 training.mat');
+load('lgg1training.mat');
 lgg1 = truncated_Images;
-load('2015.01.09 lipl4 training.mat');
+load('lipl4training.mat');
 lipl4 = truncated_Images;
 
 %% Extracting features
@@ -15,7 +15,7 @@ lipl4Feat = wormFeatureProcessing(lipl4);
 [svmStruct, trainingData, trainingClass] = wormClassification(lipl4Feat,lgg1Feat);
 
 %% Performance evaluation (10-fold cross validation)
-k=5;
+k=10;
 
 cvFolds = crossvalind('Kfold', trainingClass, k);   %# get indices of 10-fold CV
 cp = classperf(trainingClass);                      %# init performance tracker
