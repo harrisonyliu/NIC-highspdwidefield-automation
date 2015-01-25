@@ -23,6 +23,11 @@ pause_time = 3.2*numel(boundingboxes) + (2.8*10^-5)*tot_Area;
 disp(['Pausing for ' num2str(pause_time) ' seconds to photoactivate ' ...
     num2str(numel(boundingboxes)) ' worms']);
 pause(pause_time);
+pp.runRois();
+pause_time = 2*numel(boundingboxes) + (2.8*10^-5)*tot_Area;
+disp(['Pausing for ' num2str(pause_time) ' seconds to photoactivate ' ...
+    num2str(numel(boundingboxes)) ' worms']);
+pause(pause_time);
 gui.enableLiveMode(0);
 ROImgr.runCommand('Delete');
 ROImgr.close();

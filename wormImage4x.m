@@ -126,9 +126,9 @@ for i = 2:2:numel(xPositions)
         stageZ(yPositions(i),xPositions(i)) = mmc.getPosition('TIZDrive');
         axes(status_Plot(3));plot([-75:15:75],normVar,'b-');
         title(['Scan Position ' num2str(i) ' Focus Curve']);
-        mmc.snapImage();
-        img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
-        axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
+%         mmc.snapImage();
+%         img = single(reshape(typecast(mmc.getImage() ,imgType),w,h)) ./ reshape(correction_Im_small,w,h);
+%         axes(status_Plot(1));imagesc(img');colormap gray;axis off;axis image;
     end
 end
 
@@ -208,7 +208,7 @@ for i = 1:numel(xPositions)
         axes(status_Plot(6));imshow(imresize(RGB_label,4));axis image;axis off;
         title(['Scan Position ' num2str(i) ' ID worms']);axis image;
         
-        boundingboxes = regionprops(CC,'BoundingBox');
+        boundingboxes = regionprops(CC,'BoundingBox','Area');
         if numel(boundingboxes) > 0
             photoactivate(mmc,gui,pp,boundingboxes)
             pa_count = pa_count + numel(boundingboxes);
