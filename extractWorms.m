@@ -5,7 +5,7 @@ function [cropped, CC] = extractWorms(im,FL,scaleFactor)
 
 % scale factor refers to how much the image should be downscaled to make
 % the initial processing faster (e.g. 0.5 for making the image half size).
-bkgDisk = scaleFactor * 100;
+bkgDisk = scaleFactor * 50;
 closeDisk = scaleFactor * 24;
 areaDisk = scaleFactor * 9000;
 % areaDisk = scaleFactor * 2000;
